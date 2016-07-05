@@ -2,6 +2,7 @@ import { Router, Route, Link,hashHistory } from 'react-router';
 import {Component} from 'react';
 import Hello from  './components/Hello'
 import './css/style.css'
+import './less/style.less'
 
 let Main = React.createClass({
     render() {
