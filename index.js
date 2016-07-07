@@ -56,6 +56,8 @@
 
 	__webpack_require__(258);
 
+	__webpack_require__(262);
+
 	function _interopRequireDefault(obj) {
 	    return obj && obj.__esModule ? obj : { default: obj };
 	}
@@ -26591,6 +26593,7 @@
 	    goGreen: function goGreen() {
 	        store.dispatch((0, _action.changeGreen)());
 	        $("#text").css("backgroundColor", store.getState().color);
+	        alert(store.getState().data);
 	    },
 	    render: function render() {
 	        return _react2.default.createElement('div', null, _react2.default.createElement('p', { id: 'text' }, '屠龙宝刀，点击就送!!'), _react2.default.createElement('button', { onClick: this.goGreen }, '变绿'), _react2.default.createElement('button', { onClick: this.goBlue }, '变蓝'));
@@ -37909,7 +37912,8 @@
 	        case _constant.CHANGE_GREEN:
 	            return {
 	                color: 'green',
-	                time: '7'
+	                time: '7',
+	                data: action.data
 	            };
 
 	        case _constant.CHANGE_BLUE:
@@ -37939,7 +37943,7 @@
 /* 257 */
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';
+	/* WEBPACK VAR INJECTION */(function($) {'use strict';
 
 	Object.defineProperty(exports, "__esModule", {
 	    value: true
@@ -37964,11 +37968,25 @@
 	}
 
 	function changeGreen() {
-	    return { type: lights.CHANGE_GREEN };
+	    var result = "";
+	    $.ajax({
+	        type: 'get',
+	        url: '/wantplus/action/user/userList',
+	        data: { limit: 10,
+	            offset: 0 },
+	        dataType: 'json',
+	        async: false,
+	        success: function success(data) {
+	            result = data.data;
+	        }
+	    });
+	    return { type: lights.CHANGE_GREEN,
+	        data: result };
 	}
 	function changeBlue() {
 	    return { type: lights.CHANGE_BLUE };
 	}
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(233)))
 
 /***/ },
 /* 258 */
@@ -38316,6 +38334,46 @@
 		if(oldSrc)
 			URL.revokeObjectURL(oldSrc);
 	}
+
+
+/***/ },
+/* 262 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+
+	// load the styles
+	var content = __webpack_require__(263);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(261)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../node_modules/.npminstall/css-loader/0.23.1/css-loader/index.js!./../../node_modules/.npminstall/less-loader/2.2.3/less-loader/index.js!./style.less", function() {
+				var newContent = require("!!./../../node_modules/.npminstall/css-loader/0.23.1/css-loader/index.js!./../../node_modules/.npminstall/less-loader/2.2.3/less-loader/index.js!./style.less");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 263 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(260)();
+	// imports
+
+
+	// module
+	exports.push([module.id, "#text {\n  color: red;\n}\n", ""]);
+
+	// exports
 
 
 /***/ }
