@@ -24,7 +24,7 @@ class hello extends Component {
         return (
             <div>
                 <p id="text">屠龙宝刀，点击就送!!</p>
-                <button onClick={goGreen}>变绿</button>
+                <button onClick={() =>goGreen("666")}>变绿</button> /* 用这种function的方式传递参数*/
                 <button onClick={goBlue}>变蓝</button>
                 <button onClick={goBlack}>变黑</button>
                 <button onClick={lookState}>查看状态同时变绿</button>

@@ -1,7 +1,7 @@
 import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
 import Hello from '../components/Hello'
-import * as Actions from  '../actions/action'
+import Actions from  '../actions/actionIndex'
 
 //将state.initCounter绑定到组件props的initCounter
 function mapStateToProps(state) {

@@ -1,6 +1,9 @@
 import * as lights from '../constants/constant'
 
-export function goGreen(){
+export function goGreen(tet){
+    console.log("6");
+    console.log(tet);
+    console.log("7");
     let result = "666";
     //获取state对象中的initCounter属性值
     //$.ajax({
@@ -31,10 +34,4 @@ export function lookState(){
         console.log(s);
         dispatch(goGreen())
     }
-}
-
-export function goBlack(){
-    $("#text").css("backgroundColor",'black');
-    console.log("goBlack");
-    return {type:lights.CHANGE_BLACK}
 }
