@@ -4,22 +4,9 @@ export function goGreen(tet){
     console.log("6");
     console.log(tet);
     console.log("7");
-    let result = "666";
-    //获取state对象中的initCounter属性值
-    //$.ajax({
-    //    type:'get',
-    //    url:'/wantplus/action/user/userList',
-    //    data:{limit:10,
-    //        offset:0},
-    //    dataType:'json',
-    //    async : false,
-    //    success:function(data){
-    //        result = data.data
-    //    }
-    //})
     $("#text").css("backgroundColor",'green');
     return {type:lights.CHANGE_GREEN,
-        data:result}
+        data:tet}
 }
 export function goBlue(){
     $("#text").css("backgroundColor",'blue');

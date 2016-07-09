@@ -1,10 +1,7 @@
 import { createStore, applyMiddleware,compose } from 'redux'
 import thunk from 'redux-thunk'
-import reducer from '../reducers/reducer'
+import reducer from '../reducers/index'
 
-//export default function lightStore(initState){
-//    return createStore(light,initState); // 初始化创建
-//}
 //applyMiddleware来自redux可以包装 store 的 dispatch
 //thunk作用是使action创建函数可以返回一个function代替一个action对象
 const createStoreWithMiddleware = compose(

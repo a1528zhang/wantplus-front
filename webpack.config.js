@@ -9,7 +9,7 @@ module.exports = {
         progress: true
     },
     output: {
-        path: __dirname,
+        path: './build',
         filename: "index.js"
     },
     module: {
@@ -27,7 +27,7 @@ module.exports = {
                 }
             },
             {test: /\.less$/,loader: "style!css!less"},
-            {test: /\.(png|jpg|jpeg|gif|svg|woff|woff2)$/, loader: 'url-loader?limit=10000',},
+            {test: /\.(png|jpg|jpeg|gif|svg|woff|woff2|ico)$/, loader: 'url-loader?limit=10240&name=img/[hash:8].[name].[ext]'},
             { test: /\.woff(\?v=\d+\.\d+\.\d+)?$/,   loader: "url?limit=10000&mimetype=application/font-woff" },
             { test: /\.ttf(\?v=\d+\.\d+\.\d+)?$/,    loader: "url?limit=10000&mimetype=application/octet-stream" },
             { test: /\.eot(\?v=\d+\.\d+\.\d+)?$/,    loader: "file" },

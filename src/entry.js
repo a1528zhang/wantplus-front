@@ -4,12 +4,12 @@ import { Provider } from 'react-redux'
 import Hello from  './components/Hello'
 import './css/style.css'
 import './less/style.less'
-import Store from './stores/stroe'
+import configureStore from './stores/stroe'
 import App from './containers/app'
 import World from './containers/appWorld'
 import Routers from './router'
 
-const store = Store()
+const store = configureStore();
 
 let Main = React.createClass({
     render() {

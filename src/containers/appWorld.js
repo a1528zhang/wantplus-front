@@ -5,7 +5,6 @@ import * as ActionWorld from  '../actions/actionWorld'
 
 function mapStateToProps(state) {
     return {
-        initCounter: state.initCounter
     }
 }
 //将action中的所有方法绑定到props上,这样组件就有了绑定的方法

@@ -1,11 +1,12 @@
 import { combineReducers } from 'redux'
 import reducer from './reducer'
-import reducer2 from  './reducerBlack'
+import reducerBlack from './reducerBlack'
 
 //使用redux的combineReducers方法将所有reducer打包起来
+//const rootReducer = Object.assign(reducer, reducerBlack)
 const rootReducer = combineReducers({
   reducer,
-  reducer2
+  reducerBlack
 })
 
 export default rootReducer
