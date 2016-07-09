@@ -1,7 +1,6 @@
 import React, { Component, PropTypes } from 'react'
+import { Router, Route, Link } from 'react-router'
 import { render } from 'react-dom'
-import { createStore } from 'redux'
-import { Provider } from 'react-redux'
 
 //let store = lightStore();
 //
@@ -24,11 +23,15 @@ class hello extends Component {
         return (
             <div>
                 <p id="text">屠龙宝刀，点击就送!!</p>
-                <button onClick={() =>goGreen("666")}>变绿</button> /* 用这种function的方式传递参数*/
+                <button onClick={() =>goGreen("666")}>变绿</button><p>==传递参数用</p>
                 <button onClick={goBlue}>变蓝</button>
                 <button onClick={goBlack}>变黑</button>
                 <button onClick={lookState}>查看状态同时变绿</button>
                 Clicked: {initCounter} times
+                <Link className="world" to="/world"><button>召唤world组件！</button></Link>
+                <div id="contentWindow" onClick={this.handleClick}>
+                    {this.props.children}
+                </div>
             </div>
         )
     }
