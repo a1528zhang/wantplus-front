@@ -4,7 +4,7 @@ import { render } from 'react-dom'
 
 class hello extends Component {
     render() {
-        const { lookState,goGreen, goBlue,goBlack,initCounter,text} = this.props;
+        const { lookState,goGreen, goBlue,goBlack,initCounter,text,getNewData,data} = this.props;
         return (
             <div>
                 <p id="text">屠龙宝刀，点击就送!!</p>
@@ -19,6 +19,8 @@ class hello extends Component {
                 <div id="contentWindow" onClick={this.handleClick}>
                     {this.props.children}
                 </div>
+                <button onClick={getNewData}>点击获取新data</button>
+                <div>new text:{data}</div>
             </div>
         )
     }

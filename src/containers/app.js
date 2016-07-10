@@ -7,7 +7,8 @@ import Actions from  '../actions/actionIndex'
 function mapStateToProps(state) {
     return {
         initCounter: state.reducer.initCounter,
-        text:state.reducer.text
+        text:state.reducer.text,
+        data:state.reducerNew.data
     }
 }
 //将action中的所有方法绑定到props上,这样组件就有了绑定的方法
