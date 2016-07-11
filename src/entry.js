@@ -1,13 +1,9 @@
 import { Router, Route, Link,hashHistory } from 'react-router';
 import {Component} from 'react';
-import { Provider } from 'react-redux'
-import Hello from  './components/Hello'
-import './css/style.css'
-import './less/style.less'
-import configureStore from './stores/store'
-import App from './containers/app'
-import World from './containers/appWorld'
-import Routers from './router'
+import { Provider } from 'react-redux';
+import configureStore from './stores/store';
+import Routers from './router';
+import 'antd/dist/antd.less';
 
 const store = configureStore();
 
