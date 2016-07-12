@@ -1,5 +1,6 @@
 export const GET_ALL_COMMODITY = "GET_ALL_COMMODITY";
 export const DISPLAY_DETAIL = "DISPLAY_DETAIL";
+export const GET_ALL_SHOP = "GET_ALL_SHOP";
 
 export const JSON_DATA = {
     exceptionName: "请求成功",
@@ -214,5 +215,25 @@ export const JSON_DATA = {
                 }
             ]
         }
+    ]
+}
+
+export const SHOP_DATA = {
+    exceptionName: "请求成功",
+    state: 1,
+    data: [
+        {
+            shopId : 1,
+            shopName: "家居"
+        },
+        {
+            shopId:2,
+            shopName:"服饰"
+        },
+        {
+            shopId:3,
+            shopName:"数码"
+        }
+
     ]
 }

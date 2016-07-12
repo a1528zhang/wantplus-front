@@ -7,6 +7,7 @@ class Navigator extends Component {
         return (
             <div>
                 <Link to="/commodityList"><button className="menuButton">商品列表</button></Link>
+                <Link to="/shopList"><button className="menuButton">商店列表</button></Link>
             </div>
         )
     }
