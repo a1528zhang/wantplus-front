@@ -1,15 +1,11 @@
-import {PUT_DATA} from "../constants/constant"
+import {GET_ALL_COMMODITY} from "../constants/constant"
 
 const initState = {
-  data:"none"
+  data:[]
 }
 
-export default function putData(state = initState,action){
+export default function mainPage(state = initState,action){
   switch (action.type){
-    case PUT_DATA:
-      return Object.assign({}, state, {
-        data:action.data
-      })
     default:
       return state
   }

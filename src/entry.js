@@ -4,15 +4,15 @@ import { Provider } from 'react-redux';
 import configureStore from './stores/store';
 import Routers from './router';
 import 'antd/dist/antd.less';
+import './less/style.less'
+import Root from './root'
 
-const store = configureStore();
+const store = configureStore({});
 
 let Main = React.createClass({
     render() {
         return (
-            <Provider store={store}>
-                <Routers/>
-            </Provider>
+            <Root store={store}/>
         );
     }
 });
