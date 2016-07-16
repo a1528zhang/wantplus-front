@@ -3,6 +3,7 @@ import { Router, Route, Link } from 'react-router'
 import { render } from 'react-dom'
 import Navigator from './public/navigator'
 import Footer from './public/footer'
+import CommodityDetail from '../containers/commodity/commodityDetail'
 
 class App extends Component {
     render() {
@@ -17,6 +18,7 @@ class App extends Component {
                 <div id="footer">
                     <Footer/>
                 </div>
+                <CommodityDetail/>
             </div>
 
         )

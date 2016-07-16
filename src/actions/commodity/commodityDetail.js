@@ -1,7 +1,11 @@
-import {DISPLAY_DETAIL} from "../../constants/constant"
+import {HIDDEN_COMMODITY_DETAIL} from "../../constants/constant"
 
-//export function toggleDetailDisplay(){
-//    console.log("block");
-//    return {type:DISPLAY_DETAIL,
-//        display:"block"}
-//}
+export function hiddenCommodityDetail(displayDetail,detailData){
+    //取消锁定滚动条
+    $("body").attr("class","");
+    return {
+        type:HIDDEN_COMMODITY_DETAIL,
+        displayDetail:displayDetail,
+        detailData:detailData
+    }
+}
