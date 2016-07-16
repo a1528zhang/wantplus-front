@@ -1,6 +1,6 @@
-import { bindActionCreators } from 'redux';
-import { connect } from 'react-redux';
-import CommodityBrief from '../../components/commodity/commodityBrief';
+import { bindActionCreators } from 'redux'
+import { connect } from 'react-redux'
+import CommodityBrief from '../../components/commodity/commodityBrief'
 import * as Actions from "../../actions/commodity/commodityDetail"
 
 //将state.initCounter绑定到组件props的initCounter

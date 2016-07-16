@@ -1,5 +1,5 @@
-import { combineReducers } from 'redux';
-import MainPage from './mainPage';
+import { combineReducers } from 'redux'
+import MainPage from './mainPage'
 import CommodityList from './commodity/commodityList'
 import CommodityDetail from './commodity/commodityDetail'
 import ShopList from './shop/shopList'

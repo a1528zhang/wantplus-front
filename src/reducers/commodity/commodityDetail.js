@@ -1,5 +1,5 @@
 import {DISPLAY_DETAIL} from "../../constants/constant"
-import React from 'react';
+import React from 'react'
 
 const initState = {
     display:"none",
