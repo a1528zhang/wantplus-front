@@ -19,6 +19,7 @@ class CommodityList extends Component {
         return (
             <div className="want-commodity-list">
                 {commodityList}
+                <div className="want-clear-float"></div>
                 <CommodityDetail display={display}  toggle ={toggleDetailDisplay} detailData={detailData}/>
             </div>
         )

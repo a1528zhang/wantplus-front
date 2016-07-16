@@ -3,6 +3,7 @@ import { Router, Route, Link } from 'react-router'
 import { render } from 'react-dom'
 import Navigator from './public/navigator'
 import Footer from './public/footer'
+import MainBanner from './public/mainBanner'
 
 class App extends Component {
     render() {
@@ -11,11 +12,13 @@ class App extends Component {
                 <div id="navigator">
                     <Navigator />
                 </div>
-                <div>
+                <div className="want-main-body">
+                  <MainBanner />
                     {this.props.children}
+                  <div className="want-main-load">加载更多</div>
                 </div>
-                <div id="footer">
-                    <Footer/>
+                <div>
+                  <Footer/>
                 </div>
             </div>
 
