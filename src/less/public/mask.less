@@ -1,0 +1,30 @@
+
+.mask-duration {
+  transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s; /* Firefox 4 */
+  -webkit-transition-duration: 0.2s; /* Safari 和 Chrome */
+  -o-transition-duration: 0.2s; /* Opera */
+
+  transition-timing-function: ease-in-out;
+  -moz-transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+}
+
+
+
+.want-mask{
+  .mask-duration;
+  width: 400px;
+  height: 400px;
+  background-color: white;
+  opacity: 0;
+  position: absolute;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+
+

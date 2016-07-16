@@ -1,6 +1,6 @@
-import React, {Component, PropTypes } from 'react';
-import { Router, Route, Link } from 'react-router';
-import { render } from 'react-dom';
+import React, {Component, PropTypes } from 'react'
+import { Router, Route, Link } from 'react-router'
+import { render } from 'react-dom'
 import ShopBrief from './shopBrief'
 
 class ShopList extends Component {
@@ -16,7 +16,7 @@ class ShopList extends Component {
             )
         })
         return (
-            <div>
+            <div className="want-shop-list">
                 {shops}
             </div>
         )

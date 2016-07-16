@@ -1,6 +1,6 @@
-import React, { Component, PropTypes } from 'react';
-import { Router, Route, Link } from 'react-router';
-import { render } from 'react-dom';
+import React, { Component, PropTypes } from 'react'
+import { Router, Route, Link } from 'react-router'
+import { render } from 'react-dom'
 
 class Navigator extends Component {
     render() {
