@@ -1,6 +1,8 @@
-export const GET_ALL_COMMODITY = "GET_ALL_COMMODITY"
-export const DISPLAY_DETAIL = "DISPLAY_DETAIL"
-export const GET_ALL_SHOP = "GET_ALL_SHOP"
+export const GET_ALL_COMMODITY = "GET_ALL_COMMODITY";
+export const DISPLAY_COMMODITY_DETAIL = "DISPLAY_COMMODITY_DETAIL";
+export const GET_ALL_SHOP = "GET_ALL_SHOP";
+
+export const HIDDEN_COMMODITY_DETAIL = "HIDDEN_COMMODITY_DETAIL";
 
 export const JSON_DATA = {
     exceptionName: "请求成功",

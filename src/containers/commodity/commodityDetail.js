@@ -1,18 +1,18 @@
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import CommodityDetail from '../../components/commodity/commodityDetail';
-import {toggleDetailDisplay} from "../../actions/commodity/commodityList"
+import * as Actions from '../../actions/commodity/commodityDetail'
 
 //将state.initCounter绑定到组件props的initCounter
 function mapStateToProps(state) {
     return {
-        display:state.CommodityDetail.display,
+        displayDetail:state.CommodityDetail.displayDetail,
         detailData:state.CommodityDetail.detailData
     }
 }
-
+//将action中的所有方法绑定到props上,这样组件就有了绑定的方法
 function mapDispatchToProps(dispatch) {//绑定action文件
-    return bindActionCreators(toggleDetailDisplay, dispatch);
+    return bindActionCreators(Actions, dispatch);
 }
 
 //通过react-redux提供的connect方法将我们需要的state中的数据和actions中的方法绑定到props上
