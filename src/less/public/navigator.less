@@ -1,0 +1,133 @@
+@import "../mainPage.less";
+
+.want-nav-box{
+  width: 100%;
+  height: 72px;
+  background-color: white;
+  opacity: 0.98;
+  position: fixed;
+  z-index: 1000;
+  border-bottom: 1px solid rgba(0,0,0,0.07);
+  box-shadow: 0px 3px 8px -4px rgba(0,0,0,0.15);
+}
+
+.want-nav-midbox {
+  width: 1320px;
+  height: 32px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 32px;
+  font-size: 16px;
+  .want-nav-left{
+    float: left;
+  }
+  .want-nav-right{
+    float: right;
+  }
+}
+
+
+.want-nav-icon{
+  height: 32px;
+  width: 24px;
+  float: left;
+  img{
+    height: 18px;
+    margin-top: 6px;
+  }
+}
+
+.want-nav-text{
+  float: left;
+}
+
+.nav-duration {
+  transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s; /* Firefox 4 */
+  -webkit-transition-duration: 0.2s; /* Safari 和 Chrome */
+  -o-transition-duration: 0.2s; /* Opera */
+
+  transition-timing-function: ease-in-out;
+  -moz-transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+}
+
+.want-nav-click{
+  .nav-duration;
+  float: left;
+  margin-right: 40px;
+  opacity: 0.6;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.9;
+  }
+}
+
+.want-nav-login{
+  .nav-duration;
+  width: 100px;
+  height: 32px;
+  background-color: @main-color;
+  border-radius: 16px;
+  text-align: center;
+  cursor: pointer;
+  font-weight: 200;
+  float: right;
+  &:hover{
+    background-color: @main-color-hover;
+  }
+  img{
+    width: 22px;
+    display: block;
+    margin-top: 7px;
+    float: left;
+    margin-right: 8px;
+    margin-left: 22px;
+  }
+  span{
+    color: white;
+    font-size: 13px;
+    display: block;
+    float: left;
+  }
+}
+
+.want-nav-search{
+  float: right;
+  margin-right: 30px;
+  height:32px;
+  width: 200px;
+  border-radius: 16px;
+  background-color: #F1F1F1;
+}
+
+.want-search-icon{
+  width: 20px;
+  height: 32px;
+  float: left;
+  margin-left: 20px;
+  text-align: center;
+  opacity: 0.5;
+  img{
+    width: 14px;
+    margin-top: 10px;
+  }
+}
+
+.want-search-input{
+  width:135px;
+  height: 32px;
+  float: left;
+  margin-left: 5px;
+  font-size: 14px;
+  font-weight: 100;
+  input{
+    width: 135px;
+    height: 32px;
+    border: 0px;
+    outline:none;
+    background-color:transparent;
+  }
+}
