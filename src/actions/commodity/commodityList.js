@@ -1,4 +1,4 @@
-import {GET_ALL_COMMODITY,JSON_DATA,DISPLAY_DETAIL} from "../../constants/constant"
+import {GET_ALL_COMMODITY,JSON_DATA,DISPLAY_COMMODITY_DETAIL} from "../../constants/constant"
 
 export function getAllCommodity(){
     return {
@@ -7,10 +7,13 @@ export function getAllCommodity(){
     }
 }
 
-export function toggleDetailDisplay(data,display){
+export function showCommodityDetail(data,displayDetail){
+        //锁住滚动条
+        $("body").attr("class","lock");
+        $(".want-commodity-detail").css("overflow-y","auto");
     return {
-        type:DISPLAY_DETAIL,
-        display:display,
+        type:DISPLAY_COMMODITY_DETAIL,
+        displayDetail:displayDetail,
         detailData:data
     }
 }

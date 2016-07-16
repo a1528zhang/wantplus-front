@@ -7,7 +7,7 @@ import * as Actions from "../../actions/commodity/commodityList"
 function mapStateToProps(state) {
   return {
     data:state.CommodityList.data,
-    display:state.CommodityDetail.display,
+    displayDetail:state.CommodityDetail.displayDetail,
     detailData:state.CommodityDetail.detailData
   }
 }

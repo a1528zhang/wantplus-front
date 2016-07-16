@@ -5,10 +5,9 @@ import Mask from '../public/mask'
 
 class CommodityBrief extends Component {
     render(){
-        console.log(this.props.toggle);
-        const {data,toggle}=this.props;
+        const {data,showCommodityDetail}=this.props;
         return (
-            <div className = "want-commodity-brief"  onClick={()=>toggle(data,"block")}>
+            <div className = "want-commodity-brief"  onClick={()=>showCommodityDetail(data,"block")}>
                 <div className = "want-commodity-outbox">
                     <div className="want-commodity-midbox">
                       <img className = "want-commodity-img" src={data.commodityImgUrl}/>
