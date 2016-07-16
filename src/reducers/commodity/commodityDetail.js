@@ -1,16 +1,21 @@
-import {DISPLAY_DETAIL} from "../../constants/constant"
+import {DISPLAY_COMMODITY_DETAIL,HIDDEN_COMMODITY_DETAIL} from "../../constants/constant"
 import React from 'react'
 
 const initState = {
-    display:"none",
+    displayDetail:"none",
     detailData:[]
 }
 
 export default function commodityDetail(state = initState,action){
     switch (action.type){
-        case DISPLAY_DETAIL:
+        case DISPLAY_COMMODITY_DETAIL:
             return Object.assign({}, state, {
-                display:action.display,
+                displayDetail:action.displayDetail,
+                detailData:action.detailData
+            })
+        case HIDDEN_COMMODITY_DETAIL:
+            return Object.assign({}, state, {
+                displayDetail:action.displayDetail,
                 detailData:action.detailData
             })
         default:
