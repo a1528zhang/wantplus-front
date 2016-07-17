@@ -7,7 +7,8 @@ import * as Actions from '../../actions/commodity/commodityDetail'
 function mapStateToProps(state) {
     return {
         displayDetail:state.CommodityDetail.displayDetail,
-        detailData:state.CommodityDetail.detailData
+        detailData:state.CommodityDetail.detailData,
+        originalUrl :state.CommodityDetailPage.originalUrl
     }
 }
 //将action中的所有方法绑定到props上,这样组件就有了绑定的方法

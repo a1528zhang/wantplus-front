@@ -8,7 +8,9 @@ function mapStateToProps(state) {
   return {
     data:state.CommodityList.data,
     displayDetail:state.CommodityDetail.displayDetail,
-    detailData:state.CommodityDetail.detailData
+    detailData:state.CommodityDetail.detailData,
+    commodityId:state.CommodityDetailPage.commodityId,
+    originalUrl:state.CommodityDetailPage.originalUrl
   }
 }
 //将action中的所有方法绑定到props上,这样组件就有了绑定的方法

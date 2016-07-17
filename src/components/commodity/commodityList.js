@@ -10,10 +10,14 @@ class CommodityList extends Component {
         getAllCommodity();
     }
     render(){
-        const { data,showCommodityDetail} = this.props;
+        const { data,showCommodityDetail,addCommodityUrl} = this.props;
         let commodityList = data.map(function(data){
             return (
-                <CommodityBrief key={data.commodityId} data ={data} showCommodityDetail = {showCommodityDetail}/>
+                <CommodityBrief
+                    key={data.commodityId}
+                    data ={data}
+                    showCommodityDetail = {showCommodityDetail}
+                    addCommodityUrl = {addCommodityUrl}/>
             )
         })
         return (
