@@ -4,10 +4,10 @@ import { render } from 'react-dom'
 
 class CommodityDetail extends Component {
     handleClicked(event){
-        const {detailData,hiddenCommodityDetail} = this.props;
+        const {detailData,hiddenCommodityDetail,originalUrl} = this.props;
         console.log(event.target.classList[0]);
         if(event.target.classList[0] == "want-commodity-detail"){
-            hiddenCommodityDetail("none",detailData);
+            hiddenCommodityDetail("none",detailData,originalUrl);
         }
     }
     render(){

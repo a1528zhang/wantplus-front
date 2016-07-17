@@ -4,6 +4,8 @@ import { render } from 'react-dom'
 import App from './containers/mainPage'
 import CommodityList from './containers/commodity/commodityList'
 import ShopList from './containers/shop/shopList'
+//import CommodityDetail from './components/commodity/commodityDetailPage';
+import CommodityDetail from './containers/commodity/commodityDetailPage'
 
 class Routers extends Component {
     render(){
@@ -11,8 +13,9 @@ class Routers extends Component {
             <Router history={hashHistory}>
                 <Route path="/" component={App}>
                     <IndexRoute component={CommodityList}/>
-                    <Route path="/commodityList" component={CommodityList}/>
-                    <Route path="/shopList" component={ShopList}/>
+                    <Route path="/CommodityList" component={CommodityList}/>
+                    <Route path="/CommodityDetail/:commodityId" component={CommodityDetail}/>
+                    <Route path="/ShopList" component={ShopList}/>
                 </Route>
             </Router>
         )
