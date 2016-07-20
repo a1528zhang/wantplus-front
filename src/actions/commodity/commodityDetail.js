@@ -9,3 +9,11 @@ export function hiddenCommodityDetail(displayDetail,detailData){
         detailData:detailData
     }
 }
+
+export function priceGo(){
+    //取消锁定滚动条
+
+    return {
+
+    }
+}

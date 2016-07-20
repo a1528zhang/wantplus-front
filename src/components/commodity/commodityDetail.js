@@ -15,8 +15,43 @@ class CommodityDetail extends Component {
         return (
             <div className = "want-commodity-detail" style={{display:displayDetail}} onClick={this.handleClicked.bind(this)}>
                 <div className="want-commodity-detail-content" >
-                    <p>detail name:{displayDetail}</p>
-                    <p>detailData:{detailData.commodityImgUrl}</p>
+
+                  <div className = "want-commodity-detail-imgbox">
+
+                    <div className = "want-commodity-detail-midimgbox">
+                      <img className ="want-commodity-detail-imgsize" src={detailData.commodityImgUrl} />
+                    </div>
+
+                    <div className = "want-commodity-detail-btn">
+                      <div className = "want-commodity-detail-center">
+                        <div className = "want-commodity-detail-like">
+                          <img className = "want-commodity-detail-likeimg" src="http://7xwfiz.com1.z0.glb.clouddn.com/like.svg"/>
+                          <span className = "want-commodity-detail-likeinner">LIKE</span>
+                        </div>
+
+                        <div className = "want-commodity-detail-save">
+                          <img className = "want-commodity-detail-saveimg" src="http://7xwfiz.com1.z0.glb.clouddn.com/save.svg"/>
+                          <span className = "want-commodity-detail-saveinner">COLLET</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div className = "want-commodity-detail-innerbox">
+                    <div className = "want-commodity-detail-postion">
+                      <div className = "want-commodity-detail-innerone">
+                        <span className = "want-commodity-name">{detailData.commodityName}</span><br/>
+                        <span className = "want-commodity-user">{detailData.commodityUploadUserName}</span>
+                      </div>
+                      <div className="want-commodity-detail-innertwo">
+
+                      </div>
+                      <div></div>
+                    </div>
+                  </div>
+
+
                 </div>
             </div>
         )

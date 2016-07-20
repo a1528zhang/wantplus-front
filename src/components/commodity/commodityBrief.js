@@ -8,13 +8,13 @@ class CommodityBrief extends Component {
     render(){
         const {data,showCommodityDetail}=this.props;
         return (
-            <div className = "want-commodity-brief"  onClick={()=>showCommodityDetail(data,"block")}>
-                <div className = "want-commodity-outbox">
-                    <div className="want-commodity-midbox">
+            <div className = "want-commodity-brief" >
+                <div className = "want-commodity-outbox"  onClick={()=>showCommodityDetail(data,"block")}>
+                    <div className="want-commodity-midbox" >
                       <img className = "want-commodity-img" src={data.commodityImgUrl}/>
                     </div>
                     <Mask />
-                    <BriefHeader />
+                    <BriefHeader header={data}/>
                   {
                     //
                     //
