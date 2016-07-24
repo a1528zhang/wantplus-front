@@ -9,7 +9,6 @@ class CommodityDetail extends Component {
 
         const { detailData } = this.props;
         return (
-            <div>
                 <div className="want-commodity-detail-content">
 
                     <div className="want-commodity-detail-header">
@@ -102,9 +101,8 @@ class CommodityDetail extends Component {
                         </div>
                     </div>
                 </div>
-            </div>
-        )
+            )
+        }
     }
-}
 
 export default CommodityDetail;
