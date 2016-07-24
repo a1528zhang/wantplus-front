@@ -1,6 +1,6 @@
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
-import CommodityDetail from '../../components/commodity/commodityDetail';
+import CommodityDetailMask from '../../components/commodity/commodityDetailMask';
 import * as Actions from '../../actions/commodity/commodityDetail'
 
 //将state.initCounter绑定到组件props的initCounter
@@ -16,4 +16,4 @@ function mapDispatchToProps(dispatch) {//绑定action文件
 }
 
 //通过react-redux提供的connect方法将我们需要的state中的数据和actions中的方法绑定到props上
-export default connect(mapStateToProps,mapDispatchToProps)(CommodityDetail)
+export default connect(mapStateToProps,mapDispatchToProps)(CommodityDetailMask)
