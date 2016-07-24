@@ -2,6 +2,7 @@ import React, {Component, PropTypes } from 'react'
 import { Router, Route, Link } from 'react-router'
 import { render } from 'react-dom'
 import CommodityBrief from "./commodityBrief"
+import CommodityDetail from './commodityDetail'
 
 class CommodityList extends Component {
     componentDidMount(){
@@ -9,12 +10,14 @@ class CommodityList extends Component {
         getAllCommodity();
     }
     render(){
-        const { data,showCommodityDetail} = this.props;
+        const { data,showCommodityDetail,addCommodityUrl} = this.props;
         let commodityList = data.map(function(data){
             return (
-                <CommodityBrief key={data.commodityId}
-                                data ={data}
-                                showCommodityDetail = {showCommodityDetail}/>
+                <CommodityBrief
+                    key={data.commodityId}
+                    data ={data}
+                    showCommodityDetail = {showCommodityDetail}
+                    addCommodityUrl = {addCommodityUrl}/>
             )
         })
         return (

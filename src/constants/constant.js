@@ -5,6 +5,8 @@ export const GET_ALL_SHOP = "GET_ALL_SHOP";
 export const HIDDEN_COMMODITY_DETAIL = "HIDDEN_COMMODITY_DETAIL";
 export  const GET_DETAIL_DATA = "GET_DETAIL-DATA";
 
+export const ADD_COMMODITY_URL = "ADD_COMMODITY_URL";
+
 export const JSON_DATA = {
     exceptionName: "请求成功",
     state: 1,
