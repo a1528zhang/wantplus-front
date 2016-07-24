@@ -4,8 +4,6 @@ import { render } from 'react-dom'
 
 
 class BriefHeader extends Component {
-
-
   render(){
     const {header} = this.props;
 
@@ -18,7 +16,6 @@ class BriefHeader extends Component {
         <div className="want-brief-header-left">
           <img src="http://7xwfiz.com1.z0.glb.clouddn.com/save.svg"/>
         </div>
-
 
         <div className="want-brief-header-right"  >
           <div className="want-brief-header-up">

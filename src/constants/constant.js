@@ -3,6 +3,7 @@ export const DISPLAY_COMMODITY_DETAIL = "DISPLAY_COMMODITY_DETAIL";
 export const GET_ALL_SHOP = "GET_ALL_SHOP";
 
 export const HIDDEN_COMMODITY_DETAIL = "HIDDEN_COMMODITY_DETAIL";
+export  const GET_DETAIL_DATA = "GET_DETAIL-DATA";
 
 export const JSON_DATA = {
     exceptionName: "请求成功",
@@ -22,7 +23,24 @@ export const JSON_DATA = {
             shopUrl: "www.acfun.tv",
             shopIcon: "https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=2054622609,3107200137&fm=58&s=4986F51E87E05D0354D035760200F070",
             platform: "京东",
-            userBrief: [ ]
+            userBrief: [
+                {
+                    userId: 5,
+                    headImg: "http://7xpbw2.com1.z0.glb.clouddn.com/3_20151229222445_bag_S.jpg"
+                },
+                {
+                    userId: 4,
+                    headImg: "http://7xpbw2.com1.z0.glb.clouddn.com/5_20151229222549_glass_S.jpg"
+                },
+                {
+                    userId: 3,
+                    headImg: "http://7xpbw2.com1.z0.glb.clouddn.com/4_20151229222536_glassbag_S.jpg"
+                },
+                {
+                    userId: 2,
+                    headImg: "http://7xpbw2.com1.z0.glb.clouddn.com/4_20151229222515_tea_S.jpg"
+                }
+            ]
         },
         {
             commodityId: 44,
@@ -38,7 +56,24 @@ export const JSON_DATA = {
             shopUrl: "www.acfun.tv",
             shopIcon: "https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=2054622609,3107200137&fm=58&s=4986F51E87E05D0354D035760200F070",
             platform: "京东",
-            userBrief: [ ]
+            userBrief: [
+                {
+                    userId: 5,
+                    headImg: "http://7xpbw2.com1.z0.glb.clouddn.com/3_20151229222445_bag_S.jpg"
+                },
+                {
+                    userId: 4,
+                    headImg: "http://7xpbw2.com1.z0.glb.clouddn.com/5_20151229222549_glass_S.jpg"
+                },
+                {
+                    userId: 3,
+                    headImg: "http://7xpbw2.com1.z0.glb.clouddn.com/4_20151229222536_glassbag_S.jpg"
+                },
+                {
+                    userId: 2,
+                    headImg: "http://7xpbw2.com1.z0.glb.clouddn.com/4_20151229222515_tea_S.jpg"
+                }
+            ]
         },
         {
             commodityId: 43,
@@ -54,7 +89,24 @@ export const JSON_DATA = {
             shopUrl: "www.baidu.com",
             shopIcon: "https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=1696411074,2476960811&fm=58",
             platform: "京东",
-            userBrief: [ ]
+            userBrief: [
+                {
+                    userId: 5,
+                    headImg: "http://7xpbw2.com1.z0.glb.clouddn.com/3_20151229222445_bag_S.jpg"
+                },
+                {
+                    userId: 4,
+                    headImg: "http://7xpbw2.com1.z0.glb.clouddn.com/5_20151229222549_glass_S.jpg"
+                },
+                {
+                    userId: 3,
+                    headImg: "http://7xpbw2.com1.z0.glb.clouddn.com/4_20151229222536_glassbag_S.jpg"
+                },
+                {
+                    userId: 2,
+                    headImg: "http://7xpbw2.com1.z0.glb.clouddn.com/4_20151229222515_tea_S.jpg"
+                }
+            ]
         },
         {
             commodityId: 42,
@@ -70,7 +122,24 @@ export const JSON_DATA = {
             shopUrl: "www.acfun.tv",
             shopIcon: "https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=2054622609,3107200137&fm=58&s=4986F51E87E05D0354D035760200F070",
             platform: "京东",
-            userBrief: [ ]
+            userBrief: [
+                {
+                    userId: 5,
+                    headImg: "http://7xpbw2.com1.z0.glb.clouddn.com/3_20151229222445_bag_S.jpg"
+                },
+                {
+                    userId: 4,
+                    headImg: "http://7xpbw2.com1.z0.glb.clouddn.com/5_20151229222549_glass_S.jpg"
+                },
+                {
+                    userId: 3,
+                    headImg: "http://7xpbw2.com1.z0.glb.clouddn.com/4_20151229222536_glassbag_S.jpg"
+                },
+                {
+                    userId: 2,
+                    headImg: "http://7xpbw2.com1.z0.glb.clouddn.com/4_20151229222515_tea_S.jpg"
+                }
+            ]
         },
         {
             commodityId: 41,
@@ -86,7 +155,24 @@ export const JSON_DATA = {
             shopUrl: "www.acfun.tv",
             shopIcon: "https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=2054622609,3107200137&fm=58&s=4986F51E87E05D0354D035760200F070",
             platform: "京东",
-            userBrief: [ ]
+            userBrief: [
+                {
+                    userId: 5,
+                    headImg: "http://7xpbw2.com1.z0.glb.clouddn.com/3_20151229222445_bag_S.jpg"
+                },
+                {
+                    userId: 4,
+                    headImg: "http://7xpbw2.com1.z0.glb.clouddn.com/5_20151229222549_glass_S.jpg"
+                },
+                {
+                    userId: 3,
+                    headImg: "http://7xpbw2.com1.z0.glb.clouddn.com/4_20151229222536_glassbag_S.jpg"
+                },
+                {
+                    userId: 2,
+                    headImg: "http://7xpbw2.com1.z0.glb.clouddn.com/4_20151229222515_tea_S.jpg"
+                }
+            ]
         },
         {
             commodityId: 40,
@@ -102,7 +188,24 @@ export const JSON_DATA = {
             shopUrl: "www.baidu.com",
             shopIcon: "https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=1696411074,2476960811&fm=58",
             platform: "淘宝",
-            userBrief: [ ]
+            userBrief: [
+                {
+                    userId: 5,
+                    headImg: "http://7xpbw2.com1.z0.glb.clouddn.com/3_20151229222445_bag_S.jpg"
+                },
+                {
+                    userId: 4,
+                    headImg: "http://7xpbw2.com1.z0.glb.clouddn.com/5_20151229222549_glass_S.jpg"
+                },
+                {
+                    userId: 3,
+                    headImg: "http://7xpbw2.com1.z0.glb.clouddn.com/4_20151229222536_glassbag_S.jpg"
+                },
+                {
+                    userId: 2,
+                    headImg: "http://7xpbw2.com1.z0.glb.clouddn.com/4_20151229222515_tea_S.jpg"
+                }
+            ]
         },
         {
             commodityId: 39,
@@ -118,7 +221,24 @@ export const JSON_DATA = {
             shopUrl: "www.baidu.com",
             shopIcon: "https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=1696411074,2476960811&fm=58",
             platform: "淘宝",
-            userBrief: [ ]
+            userBrief: [
+                {
+                    userId: 5,
+                    headImg: "http://7xpbw2.com1.z0.glb.clouddn.com/3_20151229222445_bag_S.jpg"
+                },
+                {
+                    userId: 4,
+                    headImg: "http://7xpbw2.com1.z0.glb.clouddn.com/5_20151229222549_glass_S.jpg"
+                },
+                {
+                    userId: 3,
+                    headImg: "http://7xpbw2.com1.z0.glb.clouddn.com/4_20151229222536_glassbag_S.jpg"
+                },
+                {
+                    userId: 2,
+                    headImg: "http://7xpbw2.com1.z0.glb.clouddn.com/4_20151229222515_tea_S.jpg"
+                }
+            ]
         },
         {
             commodityId: 32,
@@ -134,7 +254,24 @@ export const JSON_DATA = {
             shopUrl: "www.acfun.tv",
             shopIcon: "https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=2054622609,3107200137&fm=58&s=4986F51E87E05D0354D035760200F070",
             platform: "京东",
-            userBrief: [ ]
+            userBrief: [
+                {
+                    userId: 5,
+                    headImg: "http://7xpbw2.com1.z0.glb.clouddn.com/3_20151229222445_bag_S.jpg"
+                },
+                {
+                    userId: 4,
+                    headImg: "http://7xpbw2.com1.z0.glb.clouddn.com/5_20151229222549_glass_S.jpg"
+                },
+                {
+                    userId: 3,
+                    headImg: "http://7xpbw2.com1.z0.glb.clouddn.com/4_20151229222536_glassbag_S.jpg"
+                },
+                {
+                    userId: 2,
+                    headImg: "http://7xpbw2.com1.z0.glb.clouddn.com/4_20151229222515_tea_S.jpg"
+                }
+            ]
         },
         {
             commodityId: 31,
@@ -150,7 +287,24 @@ export const JSON_DATA = {
             shopUrl: "www.acfun.tv",
             shopIcon: "https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=2054622609,3107200137&fm=58&s=4986F51E87E05D0354D035760200F070",
             platform: "京东",
-            userBrief: [ ]
+            userBrief: [
+                {
+                    userId: 5,
+                    headImg: "http://7xpbw2.com1.z0.glb.clouddn.com/3_20151229222445_bag_S.jpg"
+                },
+                {
+                    userId: 4,
+                    headImg: "http://7xpbw2.com1.z0.glb.clouddn.com/5_20151229222549_glass_S.jpg"
+                },
+                {
+                    userId: 3,
+                    headImg: "http://7xpbw2.com1.z0.glb.clouddn.com/4_20151229222536_glassbag_S.jpg"
+                },
+                {
+                    userId: 2,
+                    headImg: "http://7xpbw2.com1.z0.glb.clouddn.com/4_20151229222515_tea_S.jpg"
+                }
+            ]
         },
         {
             commodityId: 30,
@@ -166,7 +320,24 @@ export const JSON_DATA = {
             shopUrl: "www.baidu.com",
             shopIcon: "https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=1696411074,2476960811&fm=58",
             platform: "淘宝",
-            userBrief: [ ]
+            userBrief: [
+                {
+                    userId: 5,
+                    headImg: "http://7xpbw2.com1.z0.glb.clouddn.com/3_20151229222445_bag_S.jpg"
+                },
+                {
+                    userId: 4,
+                    headImg: "http://7xpbw2.com1.z0.glb.clouddn.com/5_20151229222549_glass_S.jpg"
+                },
+                {
+                    userId: 3,
+                    headImg: "http://7xpbw2.com1.z0.glb.clouddn.com/4_20151229222536_glassbag_S.jpg"
+                },
+                {
+                    userId: 2,
+                    headImg: "http://7xpbw2.com1.z0.glb.clouddn.com/4_20151229222515_tea_S.jpg"
+                }
+            ]
         },
         {
             commodityId: 29,
@@ -182,7 +353,24 @@ export const JSON_DATA = {
             shopUrl: "www.baidu.com",
             shopIcon: "https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=1696411074,2476960811&fm=58",
             platform: "淘宝",
-            userBrief: [ ]
+            userBrief: [
+                {
+                    userId: 5,
+                    headImg: "http://7xpbw2.com1.z0.glb.clouddn.com/3_20151229222445_bag_S.jpg"
+                },
+                {
+                    userId: 4,
+                    headImg: "http://7xpbw2.com1.z0.glb.clouddn.com/5_20151229222549_glass_S.jpg"
+                },
+                {
+                    userId: 3,
+                    headImg: "http://7xpbw2.com1.z0.glb.clouddn.com/4_20151229222536_glassbag_S.jpg"
+                },
+                {
+                    userId: 2,
+                    headImg: "http://7xpbw2.com1.z0.glb.clouddn.com/4_20151229222515_tea_S.jpg"
+                }
+            ]
         },
         {
             commodityId: 23,
@@ -225,17 +413,20 @@ export const SHOP_DATA = {
     state: 1,
     data: [
         {
-            shopId : 1,
+            shopId: 1,
             shopName: "家居"
         },
         {
-            shopId:2,
-            shopName:"服饰"
+            shopId: 2,
+            shopName: "服饰"
         },
         {
-            shopId:3,
-            shopName:"数码"
+            shopId: 3,
+            shopName: "数码"
         }
 
     ]
 }
+
+
+
