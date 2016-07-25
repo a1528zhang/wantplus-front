@@ -4,7 +4,6 @@ import { render } from 'react-dom'
 import App from './containers/mainPage'
 import CommodityList from './containers/commodity/commodityList'
 import ShopList from './containers/shop/shopList'
-//import CommodityDetail from './components/commodity/commodityDetailPage';
 import CommodityDetail from './containers/commodity/commodityDetailPage'
 
 class Routers extends Component {
