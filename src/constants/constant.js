@@ -514,4 +514,52 @@ export const USER_HEAD_IMG = [
     }
 ]
 
+export const SHOP_LIST = [
+    {
+        userId: 110,
+        shopName:"张黎的手",
+        commodityImgUrl: "http://7xpmhh.com1.z0.glb.clouddn.com/pic1.jpg"
+    },
+    {
+        userId: 111,
+        shopName:"张黎的脚",
+        commodityImgUrl: "http://7xpmhh.com1.z0.glb.clouddn.com/pic2.jpg"
+    },
+    {
+        userId: 112,
+        shopName:"张黎的屁股",
+        commodityImgUrl: "http://7xpmhh.com1.z0.glb.clouddn.com/pic3.jpg"
+    },
+    {
+        userId: 113,
+        shopName:"张黎的眼睛",
+        commodityImgUrl: "http://7xpmhh.com1.z0.glb.clouddn.com/pic4.jpg"
+    },
+    {
+        userId: 114,
+        shopName:"张黎的鼻子",
+        commodityImgUrl: "http://7xpmhh.com1.z0.glb.clouddn.com/pic5.jpg"
+    },
+    {
+        userId: 115,
+        shopName:"张黎的耳朵",
+        commodityImgUrl: "http://7xpmhh.com1.z0.glb.clouddn.com/pic6.jpg"
+    },
+    {
+        userId: 116,
+        shopName:"张黎的鼻屎",
+        commodityImgUrl: "http://7xpmhh.com1.z0.glb.clouddn.com/pic10.jpg"
+    },
+    {
+        userId: 117,
+        shopName:"张黎的鞋子",
+        commodityImgUrl: "http://7xpmhh.com1.z0.glb.clouddn.com/pic8.jpg"
+    },
+    {
+        userId: 118,
+        shopName:"张黎的内裤",
+        commodityImgUrl: "http://7xpmhh.com1.z0.glb.clouddn.com/pic9.jpg"
+    }
+]
+
 
