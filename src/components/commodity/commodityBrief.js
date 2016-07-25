@@ -20,13 +20,7 @@ class CommodityBrief extends Component {
                     </div>
                     <Mask />
                     <BriefHeader header={data}/>
-                  {
-                    //
-                    //
-                    //<p>name:{data.commodityName}</p>
-                  }
                 </div>
-
             </div>
         )
     }
