@@ -16,6 +16,7 @@
   height: 400px;
   background-color: white;
   margin: 30px;
+  box-shadow: 0px 3px 8px -4px rgba(0,0,0,0.15);
 }
 
 .want-commodity-brief{
@@ -30,6 +31,10 @@
   position: absolute;
   margin: 70px;
 }
+
+
+
+
 
 //briefHeader 样式
 .want-brief-header {
@@ -70,9 +75,6 @@
   }
 }
 
-
-
-
 .price-duration {
   transition-duration: 0.2s;
   -moz-transition-duration: 0.2s; /* Firefox 4 */
@@ -86,3 +88,39 @@
 }
 
 
+@media (max-width:1300px) {
+  .want-commodity-list{
+    width: 1167px;
+  }
+
+  .want-commodity-img{
+    width: 100%;
+    height: auto;
+  }
+
+  .want-commodity-outbox{
+    width: 347px;
+    height: 347px;
+    background-color: white;
+    margin: 21px;
+    box-shadow: 0px 3px 8px -4px rgba(0,0,0,0.15);
+  }
+
+  .want-commodity-brief{
+    float: left;
+    width: 389px;
+    height: 389px;
+  }
+
+
+
+  .want-brief-header {
+    width: 347px;
+  }
+
+  .want-commodity-midbox{
+    width: 225px;
+    height: 225px;
+    margin: 61px;
+  }
+}

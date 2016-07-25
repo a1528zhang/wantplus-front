@@ -14,9 +14,7 @@ class App extends Component {
                     <Navigator />
                 </div>
                 <div className="want-main-body">
-                  <MainBanner />
                     {this.props.children}
-                  <div className="want-main-load">加载更多</div>
                 </div>
                 <div>
                   <Footer/>

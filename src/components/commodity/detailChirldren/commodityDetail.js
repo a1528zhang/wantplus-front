@@ -1,12 +1,21 @@
 import React, { Component, PropTypes } from 'react'
 import { render } from 'react-dom'
 import DetailRecommend from './detailRecommend'
+import { USER_HEAD_IMG } from '../../../constants/constant'
 
 
 
 class CommodityDetail extends Component {
     render(){
-
+        let userHeadImg = USER_HEAD_IMG;
+        let userHeadimgList = userHeadImg.map(function(data){
+           return(
+               <div className="want-commodity-detail-userbox" key={data.userId} >
+                   <div></div>
+                   <img src={data.commodityImgUrl}/>
+               </div>
+           )
+        });
         const { detailData } = this.props;
         return (
                 <div className="want-commodity-detail-content">
@@ -40,21 +49,8 @@ class CommodityDetail extends Component {
                                     <span>京东 300 元</span>
                                 </div>
                                 <div className="want-commodity-detail-userhead">
-                                    <div className="want-commodity-detail-userbox">
-                                        <div></div>
+                                    {userHeadimgList}
 
-                                    </div>
-                                    <div className="want-commodity-detail-userbox">
-                                        <div></div>
-                                        <img src="http://7xpmhh.com1.z0.glb.clouddn.com/2.png"/>
-                                    </div>
-                                    <div className="want-commodity-detail-userbox">
-                                        <div></div>
-                                        <img src="http://7xpmhh.com1.z0.glb.clouddn.com/3.jpg"/>
-                                    </div>
-                                    <div className="want-commodity-detail-userbox">
-                                        <span>+1</span>
-                                    </div>
 
                                     <div className="want-clear-float"></div>
 
@@ -83,7 +79,6 @@ class CommodityDetail extends Component {
 
                     <div className="want-commodity-detail-related">
                         <div className="want-commodity-related">RELATED</div>
-                        <DetailRecommend />
                         <DetailRecommend />
                     </div>
                     <div className="want-commodity-detail-comment">
