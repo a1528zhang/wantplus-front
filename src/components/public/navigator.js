@@ -9,25 +9,26 @@ class Navigator extends Component {
 
               <div className="want-nav-midbox">
                 <div className="want-nav-left">
-
-                  <div className="want-nav-click">
-                    <div className="want-nav-icon">
-                      <img src="http://7xwfiz.com1.z0.glb.clouddn.com/home.svg"/>
+                  <Link to="/">
+                    <div className="want-nav-click">
+                      <div className="want-nav-icon">
+                        <img src="http://7xwfiz.com1.z0.glb.clouddn.com/home.svg"/>
+                      </div>
+                      <div className="want-nav-text">
+                        主页
+                      </div>
                     </div>
-                    <div className="want-nav-text">
-                      主页
+                  </Link>
+                  <Link to="/ShopList">
+                    <div className="want-nav-click">
+                      <div className="want-nav-icon">
+                        <img src="http://7xwfiz.com1.z0.glb.clouddn.com/shop.svg"/>
+                      </div>
+                      <div className="want-nav-text">
+                        商店
+                      </div>
                     </div>
-                  </div>
-
-                  <div className="want-nav-click">
-                    <div className="want-nav-icon">
-                      <img src="http://7xwfiz.com1.z0.glb.clouddn.com/shop.svg"/>
-                    </div>
-                    <div className="want-nav-text">
-                      商店
-                    </div>
-                  </div>
-
+                  </Link>
                   <div className="want-nav-click">
                     <div className="want-nav-icon">
                       <img src="http://7xwfiz.com1.z0.glb.clouddn.com/star.svg"/>

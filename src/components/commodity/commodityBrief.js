@@ -3,6 +3,7 @@ import { Router, Route, Link } from 'react-router'
 import { render } from 'react-dom'
 import Mask from '../public/mask'
 import BriefHeader from '../commodity/briefChirldren/briefHeader'
+import BriefFooter from '../commodity/briefChirldren/briefFooter'
 
 class CommodityBrief extends Component {
     handleClicked(event){
@@ -20,6 +21,7 @@ class CommodityBrief extends Component {
                     </div>
                     <Mask />
                     <BriefHeader header={data}/>
+                    <BriefFooter />
                 </div>
             </div>
         )
