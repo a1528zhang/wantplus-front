@@ -11,17 +11,25 @@ class BriefFooter extends Component {
         let userHeadImg = USER_HEAD_IMG
 
         let briefHeadImg = userHeadImg.map(
-          function(data){
+          function(data,index){
+              console.log(index);
+
+              let headImgStyle = {
+                  marginLeft:index * 24+'px',
+                  zIndex:6 - index
+              };
+
               return(
-                  <img src={data.commodityImgUrl}/>
+                  <div className="want-brief-userbox" key={data.userId} style={headImgStyle}>
+                      <div></div>
+                      <img src={data.commodityImgUrl}/>
+                  </div>
               )
           }
         );
         return (
-            <div className="want-brief-footer">
-                <div className="want-brief-userbox">
-                    {briefHeadImg}
-                </div>
+            <div className="want-brief-footer" >
+                {briefHeadImg}
             </div>
         )
     }
