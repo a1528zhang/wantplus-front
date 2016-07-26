@@ -1,7 +1,7 @@
 import React, { Component, PropTypes } from 'react'
 import { Router, Route, Link } from 'react-router'
 import { render } from 'react-dom'
-import Mask from '../public/mask'
+//import Mask from '../public/mask'
 import BriefHeader from '../commodity/briefChirldren/briefHeader'
 import BriefFooter from '../commodity/briefChirldren/briefFooter'
 
@@ -11,6 +11,11 @@ class CommodityBrief extends Component {
         addCommodityUrl(data.commodityId);
         showCommodityDetail(data,"block")
     }
+
+    test(){
+
+    }
+
     render(){
         const {data}=this.props;
         return (
@@ -19,7 +24,9 @@ class CommodityBrief extends Component {
                     <div className="want-commodity-midbox">
                       <img className = "want-commodity-img" src={data.commodityImgUrl}/>
                     </div>
-                    <Mask />
+                    <div className="want-mask" onMouseOver={this.test.bind(this)} >
+                        <div className="want-mask-inner"></div>
+                    </div>
                     <BriefHeader header={data}/>
                     <BriefFooter />
                 </div>
