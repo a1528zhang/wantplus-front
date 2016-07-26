@@ -3,6 +3,7 @@ import { Router, Route, Link } from 'react-router'
 import { render } from 'react-dom'
 import CommodityBrief from "./commodityBrief"
 import MainBanner from '../public/mainBanner'
+import CommodityDetailMask from '../../containers/commodity/commodityDetailMask'
 
 class CommodityList extends Component {
     componentDidMount(){
@@ -28,6 +29,7 @@ class CommodityList extends Component {
                     <div className="want-clear-float"></div>
                 </div>
                 <div className="want-main-load">加载更多</div>
+                <CommodityDetailMask/>
             </div>
         )
     }
