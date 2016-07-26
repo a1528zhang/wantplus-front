@@ -4,7 +4,7 @@ import { render } from 'react-dom'
 import Navigator from './public/navigator'
 import Footer from './public/footer'
 import MainBanner from './public/mainBanner'
-import CommodityDetail from '../containers/commodity/commodityDetail'
+import CommodityDetail from '../containers/commodity/commodityDetailMask'
 
 class App extends Component {
     render() {
@@ -19,7 +19,6 @@ class App extends Component {
                 <div>
                   <Footer/>
                 </div>
-                <CommodityDetail/>
             </div>
 
         )
