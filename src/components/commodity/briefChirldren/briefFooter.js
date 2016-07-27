@@ -12,8 +12,6 @@ class BriefFooter extends Component {
 
         let briefHeadImg = userHeadImg.map(
           function(data,index){
-              console.log(index);
-
               let headImgStyle = {
                   marginLeft:index * 24+'px',
                   zIndex:6 - index
