@@ -11,21 +11,24 @@ class CommodityBrief extends Component {
         addCommodityUrl(data.commodityId);
         showCommodityDetail(data,"block")
     }
-
-    test(){
-
+    handleHover(event){
+        console.log(this);
+        $(event.target).css("opacity","0.5");
     }
-
+    handleLeave(event){
+        console.log(this);
+        $(event.target).css("opacity","0");
+    }
     render(){
         const {data}=this.props;
         return (
             <div className = "want-commodity-brief"  onClick={this.handleClicked.bind(this)}>
-                <div className = "want-commodity-outbox">
+                <div className = "want-commodity-outbox" onMouseEnter={this.handleHover.bind(this)} onMouseLeave={this.handleLeave.bind(this)}>
                     <div className="want-commodity-midbox">
                       <img className = "want-commodity-img" src={data.commodityImgUrl}/>
                     </div>
-                    <div className="want-mask" onMouseOver={this.test.bind(this)} >
-                        <div className="want-mask-inner"></div>
+                    <div className="want-mask" >
+                        <div className="want-mask-inner">zhangliaaa</div>
                     </div>
                     <BriefHeader header={data}/>
                     <BriefFooter />
