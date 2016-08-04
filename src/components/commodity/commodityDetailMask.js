@@ -5,9 +5,6 @@ import CommodityDetail from './detailChirldren/commodityDetail'
 
 class CommodityDetailMask extends Component {
 
-    componentDidMount(){
-
-    }
 
     handleClicked(event) {
         const {detailData,hiddenCommodityDetail,originalUrl} = this.props;
@@ -24,7 +21,6 @@ class CommodityDetailMask extends Component {
             <div className="want-commodity-detail" style={{display:displayDetail}}
                  onClick={this.handleClicked.bind(this)}>
                 <CommodityDetail detailData={detailData} />
-
             </div>
         )
     }

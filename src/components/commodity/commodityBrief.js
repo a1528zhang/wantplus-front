@@ -24,7 +24,8 @@ class CommodityBrief extends Component {
         this.setState({
             maskState: "want-mask-hover",
             starState1: "want-brief-header-left1-hover",
-            starState2:"want-brief-header-left2-hover"
+            starState2:"want-brief-header-left2-hover",
+            commodityNameState:""
         });
     }
 
@@ -71,7 +72,7 @@ class CommodityBrief extends Component {
                         </div>
                         <div className={commodityMask} onClick={this.handleClicked.bind(this)}>
                             <div className="want-mask-inner">
-                                zhangliaaa
+                                {data.commodityName}
                             </div>
                         </div>
                         <BriefFooter />

@@ -1,9 +1,20 @@
 import {GET_ALL_COMMODITY,JSON_DATA,DISPLAY_COMMODITY_DETAIL,ADD_COMMODITY_URL} from "../../constants/constant"
 
 export function getAllCommodity(){
+    let result ;
+    $.ajax({
+        type:"GET",
+        url:"http://121.42.136.146/wantplus/action/commodity/getAllLCommodity?page=1",
+        datatype:"json",
+        async: false,
+        success: function (data) {
+            result = JSON.parse(data).data;
+            console.log(result.userBrief);
+        }
+    });
     return {
         type:GET_ALL_COMMODITY,
-        data:JSON_DATA.data
+        data:result
     }
 }
 
