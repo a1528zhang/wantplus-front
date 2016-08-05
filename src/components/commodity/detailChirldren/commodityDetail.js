@@ -7,16 +7,26 @@ import { USER_HEAD_IMG } from '../../../constants/constant'
 
 class CommodityDetail extends Component {
     render(){
-        let userHeadImg = USER_HEAD_IMG;
-        let userHeadimgList = userHeadImg.map(function(data){
-           return(
-               <div className="want-commodity-detail-userbox" key={data.userId} >
-                   <div></div>
-                   <img src={data.commodityImgUrl}/>
-               </div>
-           )
-        });
-        const { detailData } = this.props;
+        const { detailData,recommendData } = this.props;
+        let userHeadImg = detailData.userBrief;
+        let userHeadimgList;
+        if(detailData.userBrief == null || detailData.userBrief.length == 0 ){
+            userHeadimgList = (
+                    <div className="want-commodity-detail-userbox" >
+                    </div>
+                )
+
+        }else {
+            userHeadimgList = userHeadImg.map(function(data){
+                return(
+                    <div className="want-commodity-detail-userbox" key={data.userId} >
+                        <div></div>
+                        <img src={data.headImg}/>
+                    </div>
+                )
+            });
+        }
+
         return (
                 <div className="want-commodity-detail-content">
 
@@ -43,10 +53,10 @@ class CommodityDetail extends Component {
 
                         <div className="want-commodity-detail-textbox">
                             <div className="want-commodity-detail-postion">
-                                <div className="want-commodity-detail-name">我是一张漂亮的桌子</div>
-                                <div className="want-commodity-detail-shop">伍双的小店</div>
+                                <div className="want-commodity-detail-name">{detailData.commodityName}</div>
+                                <div className="want-commodity-detail-shop">{detailData.shopName}</div>
                                 <div className="want-commodity-detail-textbtn">
-                                    <span>京东 300 元</span>
+                                    <span>{detailData.platform} {detailData.commodityPrice} 元</span>
                                 </div>
                                 <div className="want-commodity-detail-userhead">
                                     {userHeadimgList}
@@ -55,7 +65,7 @@ class CommodityDetail extends Component {
                                     <div className="want-clear-float"></div>
 
                                     <div className="want-commodity-detail-upload">
-                                        beings <span>上传</span>
+                                        {detailData.commodityUploadUserName} <span>上传</span>
                                     </div>
                                 </div>
                             </div>
@@ -79,7 +89,7 @@ class CommodityDetail extends Component {
 
                     <div className="want-commodity-detail-related">
                         <div className="want-commodity-related">RELATED</div>
-                        <DetailRecommend />
+                        <DetailRecommend recommendData={recommendData}/>
                     </div>
                     <div className="want-commodity-detail-comment">
                         <div className="want-comment-title">WRITE THE FIRST COMMENT</div>

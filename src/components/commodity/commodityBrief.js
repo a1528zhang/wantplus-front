@@ -17,7 +17,7 @@ class CommodityBrief extends Component {
     handleClicked(){
         const {data,showCommodityDetail,addCommodityUrl} = this.props;
         addCommodityUrl(data.commodityId);
-        showCommodityDetail(data,"block");
+        showCommodityDetail(data.commodityId,"block");
     }
 
     handleHover(){
