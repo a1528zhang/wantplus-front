@@ -17,14 +17,15 @@ class CommodityBrief extends Component {
     handleClicked(){
         const {data,showCommodityDetail,addCommodityUrl} = this.props;
         addCommodityUrl(data.commodityId);
-        showCommodityDetail(data,"block");
+        showCommodityDetail(data.commodityId,"block");
     }
 
     handleHover(){
         this.setState({
             maskState: "want-mask-hover",
             starState1: "want-brief-header-left1-hover",
-            starState2:"want-brief-header-left2-hover"
+            starState2:"want-brief-header-left2-hover",
+            commodityNameState:""
         });
     }
 
@@ -55,8 +56,7 @@ class CommodityBrief extends Component {
                     </div>
 
                     <div onMouseEnter={this.handleHover.bind(this)}
-                         onMouseLeave={this.handleLeave.bind(this)}
-                         onClick={this.handleClicked.bind(this)}>
+                         onMouseLeave={this.handleLeave.bind(this)}>
 
 
                         <div className={commodityShow1}>
@@ -70,9 +70,9 @@ class CommodityBrief extends Component {
                         <div className="want-commodity-midbox" >
                             <img className = "want-commodity-img" src={data.commodityImgUrl}/>
                         </div>
-                        <div className={commodityMask} >
+                        <div className={commodityMask} onClick={this.handleClicked.bind(this)}>
                             <div className="want-mask-inner">
-                                zhangliaaa
+                                {data.commodityName}
                             </div>
                         </div>
                         <BriefFooter />

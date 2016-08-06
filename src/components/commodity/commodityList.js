@@ -20,7 +20,7 @@ class CommodityList extends Component {
                     showCommodityDetail = {showCommodityDetail}
                     addCommodityUrl = {addCommodityUrl}/>
             )
-        })
+        });
         return (
             <div>
                 <MainBanner />

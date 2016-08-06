@@ -6,8 +6,9 @@ import {RECOMMEND_DATA} from '../../../constants/constant'
 class DetailRecommend extends Component {
 
     render(){
-        let recommendData = RECOMMEND_DATA;
-        let recommendList = recommendData.map(function(data){
+        const { recommendData } = this.props;
+        let recommendDataList = RECOMMEND_DATA;
+        let recommendList = recommendDataList.map(function(data){
             return (
                 <div className="want-recommend-preview-outbox" key={data.userId}>
                     <div className="want-recommend-mask"></div>

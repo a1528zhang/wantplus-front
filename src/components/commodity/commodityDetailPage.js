@@ -8,7 +8,6 @@ class CommodityDetailPage extends Component {
     componentDidMount(){
         //根据id发送ajax
         let id =this.props.params.commodityId;
-
     }
     render(){
         const {commodityId} = this.props;
