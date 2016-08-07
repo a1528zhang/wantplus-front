@@ -6,6 +6,7 @@ import MainBanner from '../public/mainBanner'
 import CommodityDetailMask from '../../containers/commodity/commodityDetailMask'
 
 class CommodityList extends Component {
+
     componentDidMount(){
         const {getAllCommodity} = this.props;
         getAllCommodity();

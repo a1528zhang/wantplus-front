@@ -8,6 +8,9 @@ import CommodityDetail from './containers/commodity/commodityDetailPage'
 import PersonalPage from './containers/personal/personalPage'
 
 class Routers extends Component {
+
+
+
     render(){
         return (
             <Router history={hashHistory}>

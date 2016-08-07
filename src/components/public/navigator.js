@@ -1,9 +1,20 @@
 import React, { Component, PropTypes } from 'react'
 import { Router, Route, Link } from 'react-router'
 import { render } from 'react-dom'
+import { cutUrl } from '../../utils/stringUtils'
 
 class Navigator extends Component {
-    render() {
+
+  componentWillMount(){
+    let originalUrl  = window.location.href;
+    let beings = cutUrl(originalUrl);
+    if(beings == ""){
+
+    }
+  }
+
+
+  render() {
         return (
             <div className="want-nav-box">
 
