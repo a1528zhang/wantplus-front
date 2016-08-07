@@ -33,7 +33,7 @@ class CommodityDetail extends Component {
                     <div className="want-commodity-detail-header">
                         <div className="want-commodity-detail-imgbox">
                             <div className="want-commodity-detail-midimgbox">
-                                <img className="want-commodity-detail-imgsize" src={detailData.commodityImgUrl}/>
+                                <img className="want-commodity-detail-imgsize" src={detailData.commodityImg}/>
                             </div>
                             <div className="want-commodity-detail-btn">
                                 <div className="want-commodity-detail-center">

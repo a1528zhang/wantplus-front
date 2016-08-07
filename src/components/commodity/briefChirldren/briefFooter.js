@@ -20,7 +20,7 @@ class BriefFooter extends Component {
               return(
                   <div className="want-brief-userbox" key={data.userId} style={headImgStyle}>
                       <div></div>
-                      <img src={data.commodityImgUrl}/>
+                      <img src={data.commodityImg}/>
                   </div>
               )
           }

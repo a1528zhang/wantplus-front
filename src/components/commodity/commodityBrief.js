@@ -68,7 +68,7 @@ class CommodityBrief extends Component {
 
 
                         <div className="want-commodity-midbox" >
-                            <img className = "want-commodity-img" src={data.commodityImgUrl}/>
+                            <img className = "want-commodity-img" src={data.commodityImg}/>
                         </div>
                         <div className={commodityMask} onClick={this.handleClicked.bind(this)}>
                             <div className="want-mask-inner">
