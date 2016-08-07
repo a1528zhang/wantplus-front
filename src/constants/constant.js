@@ -20,7 +20,7 @@ export const JSON_DATA = {
             commodityCollection: 0,
             commodityName: "摆件",
             commodityPrice: 500,
-            commodityImgUrl: "http://7xpmhh.com1.z0.glb.clouddn.com/pic1.jpg",
+            commodityImg: "http://7xpmhh.com1.z0.glb.clouddn.com/pic1.jpg",
             shopId: 2,
             shopName: "玩艺",
             shopUrl: "www.acfun.tv",
@@ -53,7 +53,7 @@ export const JSON_DATA = {
             commodityCollection: 0,
             commodityName: "瓶子",
             commodityPrice: 12,
-            commodityImgUrl: "http://7xpmhh.com1.z0.glb.clouddn.com/pic2.jpg",
+            commodityImg: "http://7xpmhh.com1.z0.glb.clouddn.com/pic2.jpg",
             shopId: 2,
             shopName: "玩艺",
             shopUrl: "www.acfun.tv",
@@ -86,7 +86,7 @@ export const JSON_DATA = {
             commodityCollection: 0,
             commodityName: "banana",
             commodityPrice: 230,
-            commodityImgUrl: "http://7xpmhh.com1.z0.glb.clouddn.com/pic11.jpg",
+            commodityImg: "http://7xpmhh.com1.z0.glb.clouddn.com/pic11.jpg",
             shopId: 1,
             shopName: "精品店",
             shopUrl: "www.baidu.com",
@@ -119,7 +119,7 @@ export const JSON_DATA = {
             commodityCollection: 0,
             commodityName: "钟",
             commodityPrice: 500,
-            commodityImgUrl: "http://7xpmhh.com1.z0.glb.clouddn.com/pic4.jpg",
+            commodityImg: "http://7xpmhh.com1.z0.glb.clouddn.com/pic4.jpg",
             shopId: 2,
             shopName: "玩艺",
             shopUrl: "www.acfun.tv",
@@ -152,7 +152,7 @@ export const JSON_DATA = {
             commodityCollection: 0,
             commodityName: "表",
             commodityPrice: 500,
-            commodityImgUrl: "http://7xpmhh.com1.z0.glb.clouddn.com/pic5.jpg",
+            commodityImg: "http://7xpmhh.com1.z0.glb.clouddn.com/pic5.jpg",
             shopId: 2,
             shopName: "玩艺",
             shopUrl: "www.acfun.tv",
@@ -185,7 +185,7 @@ export const JSON_DATA = {
             commodityCollection: 0,
             commodityName: "clock-black",
             commodityPrice: 60,
-            commodityImgUrl: "http://7xpbw2.com1.z0.glb.clouddn.com/2_20160210121422_saz9mh2s5wxibz7qg8pf_L.jpg",
+            commodityImg: "http://7xpbw2.com1.z0.glb.clouddn.com/2_20160210121422_saz9mh2s5wxibz7qg8pf_L.jpg",
             shopId: 1,
             shopName: "精品店",
             shopUrl: "www.baidu.com",
@@ -218,7 +218,7 @@ export const JSON_DATA = {
             commodityCollection: 0,
             commodityName: "qop",
             commodityPrice: 65,
-            commodityImgUrl: "http://7xpbw2.com1.z0.glb.clouddn.com/1_20160210115335_k88trmdgozy88vfdxepo_L.jpg",
+            commodityImg: "http://7xpbw2.com1.z0.glb.clouddn.com/1_20160210115335_k88trmdgozy88vfdxepo_L.jpg",
             shopId: 1,
             shopName: "精品店",
             shopUrl: "www.baidu.com",
@@ -251,7 +251,7 @@ export const JSON_DATA = {
             commodityCollection: 0,
             commodityName: "goods",
             commodityPrice: 32.5,
-            commodityImgUrl: "http://7xpbw2.com1.z0.glb.clouddn.com/2_20160210112031_cxojdtibhljkggmpvc4m_L.jpg",
+            commodityImg: "http://7xpbw2.com1.z0.glb.clouddn.com/2_20160210112031_cxojdtibhljkggmpvc4m_L.jpg",
             shopId: 2,
             shopName: "玩艺",
             shopUrl: "www.acfun.tv",
@@ -284,7 +284,7 @@ export const JSON_DATA = {
             commodityCollection: 0,
             commodityName: "杯",
             commodityPrice: 50,
-            commodityImgUrl: "http://7xpmhh.com1.z0.glb.clouddn.com/pic7.jpg",
+            commodityImg: "http://7xpmhh.com1.z0.glb.clouddn.com/pic7.jpg",
             shopId: 2,
             shopName: "玩艺",
             shopUrl: "www.acfun.tv",
@@ -317,7 +317,7 @@ export const JSON_DATA = {
             commodityCollection: 0,
             commodityName: "飞机",
             commodityPrice: 99999,
-            commodityImgUrl: "http://7xpmhh.com1.z0.glb.clouddn.com/pic8.jpg",
+            commodityImg: "http://7xpmhh.com1.z0.glb.clouddn.com/pic8.jpg",
             shopId: 1,
             shopName: "精品店",
             shopUrl: "www.baidu.com",
@@ -350,7 +350,7 @@ export const JSON_DATA = {
             commodityCollection: 0,
             commodityName: "蓝色小药丸",
             commodityPrice: 99999,
-            commodityImgUrl: "http://7xpmhh.com1.z0.glb.clouddn.com/pic9.jpg",
+            commodityImg: "http://7xpmhh.com1.z0.glb.clouddn.com/pic9.jpg",
             shopId: 1,
             shopName: "精品店",
             shopUrl: "www.baidu.com",
@@ -383,7 +383,7 @@ export const JSON_DATA = {
             commodityCollection: 0,
             commodityName: "bag",
             commodityPrice: 788,
-            commodityImgUrl: "http://7xpmhh.com1.z0.glb.clouddn.com/pic10.jpg",
+            commodityImg: "http://7xpmhh.com1.z0.glb.clouddn.com/pic10.jpg",
             shopId: 1,
             shopName: "精品店",
             shopUrl: "www.baidu.com",
@@ -442,7 +442,7 @@ export const DETAIL_DATA = {
         commodityCollection: 0,
         commodityName: "asdasd",
         commodityPrice: 321,
-        commodityImgUrl: "http://7xpmhh.com1.z0.glb.clouddn.com/pic9.jpg",
+        commodityImg: "http://7xpmhh.com1.z0.glb.clouddn.com/pic9.jpg",
         shopId: 1,
         shopName: "精品店",
         shopUrl: "www.baidu.com",
@@ -472,46 +472,46 @@ export const DETAIL_DATA = {
 export const RECOMMEND_DATA = [
     {
         userId: 100,
-        commodityImgUrl: "http://7xpmhh.com1.z0.glb.clouddn.com/pic9.jpg"
+        commodityImg: "http://7xpmhh.com1.z0.glb.clouddn.com/pic9.jpg"
     },
     {
         userId: 101,
-        commodityImgUrl: "http://7xpmhh.com1.z0.glb.clouddn.com/pic8.jpg"
+        commodityImg: "http://7xpmhh.com1.z0.glb.clouddn.com/pic8.jpg"
     },
     {
         userId: 102,
-        commodityImgUrl: "http://7xpmhh.com1.z0.glb.clouddn.com/pic7.jpg"
+        commodityImg: "http://7xpmhh.com1.z0.glb.clouddn.com/pic7.jpg"
     },
     {
         userId: 103,
-        commodityImgUrl: "http://7xpmhh.com1.z0.glb.clouddn.com/pic6.jpg"
+        commodityImg: "http://7xpmhh.com1.z0.glb.clouddn.com/pic6.jpg"
     },
     {
         userId: 104,
-        commodityImgUrl: "http://7xpmhh.com1.z0.glb.clouddn.com/pic5.jpg"
+        commodityImg: "http://7xpmhh.com1.z0.glb.clouddn.com/pic5.jpg"
     }
 ]
 
 export const USER_HEAD_IMG = [
     {
         userId: 105,
-        commodityImgUrl: "http://7xpmhh.com1.z0.glb.clouddn.com/1.jpg"
+        commodityImg: "http://7xpmhh.com1.z0.glb.clouddn.com/1.jpg"
     },
     {
         userId: 106,
-        commodityImgUrl: "http://7xpmhh.com1.z0.glb.clouddn.com/2.png"
+        commodityImg: "http://7xpmhh.com1.z0.glb.clouddn.com/2.png"
     },
     {
         userId: 107,
-        commodityImgUrl: "http://7xpmhh.com1.z0.glb.clouddn.com/3.jpg"
+        commodityImg: "http://7xpmhh.com1.z0.glb.clouddn.com/3.jpg"
     },
     {
         userId: 108,
-        commodityImgUrl: "http://7xpmhh.com1.z0.glb.clouddn.com/4.jpg"
+        commodityImg: "http://7xpmhh.com1.z0.glb.clouddn.com/4.jpg"
     },
     {
         userId: 109,
-        commodityImgUrl: "http://7xpmhh.com1.z0.glb.clouddn.com/5.jpg"
+        commodityImg: "http://7xpmhh.com1.z0.glb.clouddn.com/5.jpg"
     }
 ]
 
@@ -519,47 +519,47 @@ export const SHOP_LIST = [
     {
         userId: 110,
         shopName:"张黎的手",
-        commodityImgUrl: "http://7xpmhh.com1.z0.glb.clouddn.com/pic1.jpg"
+        commodityImg: "http://7xpmhh.com1.z0.glb.clouddn.com/pic1.jpg"
     },
     {
         userId: 111,
         shopName:"张黎的脚",
-        commodityImgUrl: "http://7xpmhh.com1.z0.glb.clouddn.com/pic2.jpg"
+        commodityImg: "http://7xpmhh.com1.z0.glb.clouddn.com/pic2.jpg"
     },
     {
         userId: 112,
         shopName:"张黎的屁股",
-        commodityImgUrl: "http://7xpmhh.com1.z0.glb.clouddn.com/pic3.jpg"
+        commodityImg: "http://7xpmhh.com1.z0.glb.clouddn.com/pic3.jpg"
     },
     {
         userId: 113,
         shopName:"张黎的眼睛",
-        commodityImgUrl: "http://7xpmhh.com1.z0.glb.clouddn.com/pic4.jpg"
+        commodityImg: "http://7xpmhh.com1.z0.glb.clouddn.com/pic4.jpg"
     },
     {
         userId: 114,
         shopName:"张黎的鼻子",
-        commodityImgUrl: "http://7xpmhh.com1.z0.glb.clouddn.com/pic5.jpg"
+        commodityImg: "http://7xpmhh.com1.z0.glb.clouddn.com/pic5.jpg"
     },
     {
         userId: 115,
         shopName:"张黎的耳朵",
-        commodityImgUrl: "http://7xpmhh.com1.z0.glb.clouddn.com/pic6.jpg"
+        commodityImg: "http://7xpmhh.com1.z0.glb.clouddn.com/pic6.jpg"
     },
     {
         userId: 116,
         shopName:"张黎的鼻屎",
-        commodityImgUrl: "http://7xpmhh.com1.z0.glb.clouddn.com/pic10.jpg"
+        commodityImg: "http://7xpmhh.com1.z0.glb.clouddn.com/pic10.jpg"
     },
     {
         userId: 117,
         shopName:"张黎的鞋子",
-        commodityImgUrl: "http://7xpmhh.com1.z0.glb.clouddn.com/pic8.jpg"
+        commodityImg: "http://7xpmhh.com1.z0.glb.clouddn.com/pic8.jpg"
     },
     {
         userId: 118,
         shopName:"张黎的内裤",
-        commodityImgUrl: "http://7xpmhh.com1.z0.glb.clouddn.com/pic9.jpg"
+        commodityImg: "http://7xpmhh.com1.z0.glb.clouddn.com/pic9.jpg"
     }
 ]
 

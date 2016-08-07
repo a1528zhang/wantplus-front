@@ -14,7 +14,7 @@ class DetailRecommend extends Component {
                     <div className="want-recommend-mask"></div>
                     <div className="want-recommend-preview-box">
                         <div>
-                            <img src={data.commodityImgUrl} />
+                            <img src={data.commodityImg} />
                         </div>
                     </div>
                 </div>

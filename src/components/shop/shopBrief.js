@@ -10,7 +10,7 @@ class ShopBrief extends Component {
                 <div className = "want-shop-mask"></div>
                 <div className = "want-shop-innerbox">
                     <div className="want-shop-position">
-                        <img src={data.commodityImgUrl} />
+                        <img src={data.commodityImg} />
                         <div className="want-shop-name">
                             {data.shopName}
                         </div>
