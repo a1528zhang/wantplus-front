@@ -4,7 +4,7 @@ export function getAllCommodity(){
     let result ;
     $.ajax({
         type:"GET",
-        url:"http://localhost:8080/wantplus/action/commodity/getAllLCommodity?page=1",
+        url:"http://121.42.136.146/wantplus/action/commodity/getAllLCommodity?page=1",
         datatype:"json",
         async: false,
         success: function (data) {
