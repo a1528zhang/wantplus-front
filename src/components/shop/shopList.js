@@ -7,10 +7,6 @@ import { cutUrl } from '../../utils/stringUtils'
 
 class ShopList extends Component {
 
-    componentWillMount(){
-
-    }
-
     componentDidMount(){
         const {getAllShop} = this.props;
         getAllShop();

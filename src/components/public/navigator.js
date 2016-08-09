@@ -45,8 +45,15 @@ class Navigator extends Component {
 
                 <div className="want-nav-right">
 
+                  <div className="want-nav-join">
+                    {
+                      //<img src="http://7xwfiz.com1.z0.glb.clouddn.com/wechart.png"/>
+                    }
+                    <Link to="/Login">
+                      <span>注册</span>
+                    </Link>
+                  </div>
                   <div className="want-nav-login">
-                    <img src="http://7xwfiz.com1.z0.glb.clouddn.com/wechart.png"/>
                     <span>登录</span>
                   </div>
                   <div className="want-nav-search">

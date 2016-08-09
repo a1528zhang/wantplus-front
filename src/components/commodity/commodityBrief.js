@@ -66,7 +66,6 @@ class CommodityBrief extends Component {
                             <img src="http://7xwfiz.com1.z0.glb.clouddn.com/save.svg"/>
                         </div>
 
-
                         <div className="want-commodity-midbox" >
                             <img className = "want-commodity-img" src={data.commodityImg}/>
                         </div>
