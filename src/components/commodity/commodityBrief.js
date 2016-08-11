@@ -40,36 +40,34 @@ class CommodityBrief extends Component {
     render(){
         const {data}=this.props;
 
-        var commodityMask = this.state.maskState;
-        var commodityShow1 = this.state.starState1;
-        var commodityShow2 = this.state.starState2;
-
         return (
             <div className = "want-commodity-brief"  >
 
                 <div className = "want-commodity-outbox">
 
-                    <div className="want-brief-header-right"  >
-                        <div className="want-brief-header-up">
-                            ￥{data.commodityPrice}
+                    <a href={data.outerLink}>
+                        <div className="want-brief-header-right"  >
+                            <div className="want-brief-header-up">
+                                ￥{data.commodityPrice}
+                            </div>
                         </div>
-                    </div>
+                    </a>
 
                     <div onMouseEnter={this.handleHover.bind(this)}
                          onMouseLeave={this.handleLeave.bind(this)}>
 
 
-                        <div className={commodityShow1}>
+                        <div className={this.state.starState1}>
                             <img src="http://7xwfiz.com1.z0.glb.clouddn.com/like.svg"/>
                         </div>
-                        <div className={commodityShow2}>
+                        <div className={this.state.starState2}>
                             <img src="http://7xwfiz.com1.z0.glb.clouddn.com/save.svg"/>
                         </div>
 
                         <div className="want-commodity-midbox" >
                             <img className = "want-commodity-img" src={data.commodityImg}/>
                         </div>
-                        <div className={commodityMask} onClick={this.handleClicked.bind(this)}>
+                        <div className={this.state.maskState} onClick={this.handleClicked.bind(this)}>
                             <div className="want-mask-inner">
                                 {data.commodityName}
                             </div>
