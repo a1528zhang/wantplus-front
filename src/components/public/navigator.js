@@ -1,17 +1,9 @@
 import React, { Component, PropTypes } from 'react'
 import { Router, Route, Link } from 'react-router'
 import { render } from 'react-dom'
-import { cutUrl } from '../../utils/stringUtils'
+
 
 class Navigator extends Component {
-
-  componentWillMount(){
-    let originalUrl  = window.location.href;
-    let beings = cutUrl(originalUrl);
-    if(beings == ""){
-
-    }
-  }
 
 
   render() {
@@ -21,7 +13,7 @@ class Navigator extends Component {
               <div className="want-nav-midbox">
                 <div className="want-nav-left">
                   <Link to="/">
-                    <div className="want-nav-click">
+                    <div className="want-nav-click" id="want-nav-homepage-id">
                       <div className="want-nav-icon">
                         <img src="http://7xwfiz.com1.z0.glb.clouddn.com/home.svg"/>
                       </div>
@@ -31,7 +23,7 @@ class Navigator extends Component {
                     </div>
                   </Link>
                   <Link to="/ShopList">
-                    <div className="want-nav-click">
+                    <div className="want-nav-click" id="want-nav-shoplist-id">
                       <div className="want-nav-icon">
                         <img src="http://7xwfiz.com1.z0.glb.clouddn.com/shop.svg"/>
                       </div>
@@ -53,8 +45,15 @@ class Navigator extends Component {
 
                 <div className="want-nav-right">
 
+                  <div className="want-nav-join">
+                    {
+                      //<img src="http://7xwfiz.com1.z0.glb.clouddn.com/wechart.png"/>
+                    }
+                    <Link to="/Login">
+                      <span>注册</span>
+                    </Link>
+                  </div>
                   <div className="want-nav-login">
-                    <img src="http://7xwfiz.com1.z0.glb.clouddn.com/wechart.png"/>
                     <span>登录</span>
                   </div>
                   <div className="want-nav-search">

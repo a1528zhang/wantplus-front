@@ -8,6 +8,7 @@ import { USER_HEAD_IMG } from '../../../constants/constant'
 class CommodityDetail extends Component {
     render(){
         const { detailData,recommendData } = this.props;
+        console.log(detailData);
         let userHeadImg = detailData.userBrief;
         let userHeadimgList;
         if(detailData.userBrief == null || detailData.userBrief.length == 0 ){
@@ -55,9 +56,13 @@ class CommodityDetail extends Component {
                             <div className="want-commodity-detail-postion">
                                 <div className="want-commodity-detail-name">{detailData.commodityName}</div>
                                 <div className="want-commodity-detail-shop">{detailData.shopName}</div>
-                                <div className="want-commodity-detail-textbtn">
-                                    <span>{detailData.platform} {detailData.commodityPrice} 元</span>
-                                </div>
+
+                                <a href={detailData.outerLink}>
+                                    <div className="want-commodity-detail-textbtn">
+                                        <span>{detailData.platform} {detailData.commodityPrice} 元</span>
+                                    </div>
+                                </a>
+
                                 <div className="want-commodity-detail-userhead">
                                     {userHeadimgList}
 
