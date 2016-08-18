@@ -10,7 +10,8 @@ class CommodityBrief extends Component {
         this.state = {
             maskState:"want-mask",
             starState1:"want-brief-header-left1",
-            starState2:"want-brief-header-left2"
+            starState2:"want-brief-header-left2",
+            arrowStatus:"want-brief-arrow"
         };
     }
 
@@ -24,8 +25,13 @@ class CommodityBrief extends Component {
         this.setState({
             maskState: "want-mask-hover",
             starState1: "want-brief-header-left1-hover",
-            starState2:"want-brief-header-left2-hover",
-            commodityNameState:""
+            starState2:"want-brief-header-left2-hover"
+        });
+    }
+
+    arrowHandleHover(){
+        this.setState({
+            arrowStatus:"want-brief-arrow-hover"
         });
     }
 
@@ -34,6 +40,12 @@ class CommodityBrief extends Component {
             maskState: "want-mask",
             starState1: "want-brief-header-left1",
             starState2:"want-brief-header-left2"
+        });
+    }
+
+    arrowHandleLeave(){
+        this.setState({
+            arrowStatus:"want-brief-arrow"
         });
     }
 
@@ -46,9 +58,14 @@ class CommodityBrief extends Component {
                 <div className = "want-commodity-outbox">
 
                     <a href={data.outerLink}>
-                        <div className="want-brief-header-right"  >
+                        <div className="want-brief-header-right"
+                             onMouseEnter={this.arrowHandleHover.bind(this)}
+                             onMouseLeave={this.arrowHandleLeave.bind(this)}>
                             <div className="want-brief-header-up">
                                 ￥{data.commodityPrice}
+                                <span className={this.state.arrowStatus}>
+                                    <img src="http://7xwfiz.com1.z0.glb.clouddn.com/arrow.svg"/>
+                                </span>
                             </div>
                         </div>
                     </a>
