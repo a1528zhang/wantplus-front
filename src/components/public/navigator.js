@@ -4,8 +4,9 @@ import { render } from 'react-dom'
 
 
 class Navigator extends Component {
+  showLoginBox(){
 
-
+  }
   render() {
         return (
             <div className="want-nav-box">
@@ -49,7 +50,7 @@ class Navigator extends Component {
                     {
                       //<img src="http://7xwfiz.com1.z0.glb.clouddn.com/wechart.png"/>
                     }
-                    <Link to="/Login">
+                    <Link to="/signUp">
                       <span>注册</span>
                     </Link>
                   </div>

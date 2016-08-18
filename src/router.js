@@ -6,12 +6,9 @@ import CommodityList from './containers/commodity/commodityList'
 import ShopList from './containers/shop/shopList'
 import CommodityDetail from './containers/commodity/commodityDetailPage'
 import PersonalPage from './containers/personal/personalPage'
-import Login from './components/login/login'
+import SignUp from './containers/user/signUp'
 
 class Routers extends Component {
-
-
-
     render(){
         return (
             <Router history={hashHistory}>
@@ -21,7 +18,7 @@ class Routers extends Component {
                     <Route path="/commodityDetail/:commodityId" component={CommodityDetail}/>
                     <Route path="/shopList" component={ShopList}/>
                     <Route path="/personalPage" component={PersonalPage}/>
-                    <Route path="/login" component={Login}/>
+                    <Route path="/signUp" component={SignUp}/>
                 </Route>
             </Router>
         )
