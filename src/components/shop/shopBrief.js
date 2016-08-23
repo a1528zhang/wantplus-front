@@ -16,10 +16,6 @@ class ShopBrief extends Component {
                         </div>
                     </div>
                 </div>
-                {
-                    //<p >shopid: {data.shopId}</p>
-                    //<p>shopname:{data.shopName}</p>
-                }
             </div>
         )
     }

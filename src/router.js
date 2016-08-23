@@ -11,7 +11,7 @@ import SignUp from './containers/user/signUp'
 class Routers extends Component {
     render(){
         return (
-            <Router history={hashHistory}>
+            <Router history={ hashHistory }>
                 <Route path="/" component={App}>
                     <IndexRoute component={CommodityList}/>
                     <Route path="/commodityList" component={CommodityList}/>
