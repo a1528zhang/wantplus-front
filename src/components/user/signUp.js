@@ -63,28 +63,34 @@ class Register extends Component{
             <div className="want-sign-up-box">
                 <div className="want-sign-up-context">
                     <div className="want-sign-up-title">
-                        <p className="want-sign-up-title-text">品质·生活</p>
+                        品质·生活
                     </div>
                     <div className="want-sign-up-user-account">
-                        <div className="want-sign-up-user-email-label">
-                            <p >email</p>
+                        <div className="want-sign-up-input-title">
+                            邮箱地址
                         </div>
-                        <input className="want-sign-up-user-email-input"/>
-                        <div className="want-sign-up-user-password-label">
-                            <p >password</p>
+                        <input className="want-sign-up-input"/>
+
+                        <div className="want-sign-up-input-title">
+                            密码
                         </div>
-                        <input className="want-sign-up-user-password-input" type="password"/>
+                        <input className="want-sign-up-input" type="password"/>
+
+                        <div className="want-sign-up-input-title">
+                            昵称
+                        </div>
+                        <input className="want-sign-up-input"/>
                     </div>
+
                     <div className="want-sign-up-user-info">
-                        <div className="want-sign-up-user-nickname-label">
-                            <p>你的名字</p>
-                        </div>
-                        <input className="want-sign-up-user-nickname-input"/>
-                        <div className="want-sign-up-user-headImg-text">
-                            <p>上传你的头像</p>
+
+                        <div className="want-sign-up-img-title">
+                            上传你的头像
                         </div>
                         <div className="want-sign-up-user-preview-image-frame">
-                            <img className="want-sign-up-user-preview-image"  onClick={this.imgSelect}/>
+                            <img className="want-sign-up-user-preview-image"
+                                 src="http://7xwfiz.com1.z0.glb.clouddn.com/smile.svg"
+                                 onClick={this.imgSelect}/>
                         </div>
                         <div className="want-sign-up-user-headImg-upload-button" onClick={this.imgSelect}>upload</div>
                         <input className="want-sign-up-user-headImg-input" type="file" onChange={this.fileChange} name="file" id ="file"/>

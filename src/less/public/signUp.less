@@ -1,47 +1,48 @@
 /****************** 公用属性 ******************/
-.display-box-center{
-  display:-moz-box;
-  display:-webkit-box;
-  display: box;
+//.display-box-center {
+//  display: -moz-box;
+//  display: -webkit-box;
+//  display: box;
+//
+//  -moz-box-align: center;
+//  -webkit-box-align: center;
+//  box-align: center;
+//}
+//
+//.display-box-flex(@value) {
+//  -moz-box-flex: @value;
+//  -webkit-box-flex: @value;
+//  box-flex: @value;
+//}
+//
+//.display-box-vertical {
+//  -moz-box-orient: vertical;
+//  -webkit-box-orient: vertical;
+//  -o-box-orient: vertical;
+//  box-orient: vertical;
+//}
+//
+//.input-frame {
+//  margin-top: 5px;
+//  margin-bottom: 5px;
+//  height: 50px;
+//  width: 450px;
+//  border: 0px solid white;
+//  background-color: #e3e3e3;
+//  font-size: 20px;
+//}
+//
+//.input-label-text {
+//  width: 450px;
+//  p {
+//    font-size: 15px;
+//  }
+//}
 
-  -moz-box-align:center;
-  -webkit-box-align:center;
-  box-align:center;
-}
-
-.display-box-flex(@value){
-  -moz-box-flex: @value;
-  -webkit-box-flex: @value;
-  box-flex: @value;
-}
-
-.display-box-vertical{
-  -moz-box-orient:vertical;
-  -webkit-box-orient:vertical;
-  -o-box-orient:vertical;
-  box-orient:vertical;
-}
-
-.input-frame{
-  margin-top:5px;
-  margin-bottom:5px;
-  height:50px;
-  width:450px;
-  border:0px solid white;
-  background-color: #e3e3e3;
-  font-size: 20px;
-}
-
-.input-label-text{
-  width:450px;
-  p{
-    font-size: 15px;
-  }
-}
 /****************** 公用属性 ******************/
 
-.want-sign-up-box{
-  position:relative;
+.want-sign-up-box {
+  position: relative;
   width: 830px;
   height: 1000px;
   background-color: white;
@@ -49,122 +50,151 @@
   margin-left: auto;
   margin-top: 50px;
   margin-bottom: 50px;
-  box-shadow: 0px 3px 8px -4px rgba(0,0,0,0.15);
-  .display-box-center;
-  -moz-box-pack:center;
-  -webkit-box-pack:center;
-  box-pack:center;
+  box-shadow: 0px 3px 8px -4px rgba(0, 0, 0, 0.15);
 }
 
-.want-sign-up-context{
-  width: 70%;
-  height: 100%;
-  .display-box-center;
-  .display-box-vertical;
+.want-sign-up-context {
+  margin-left: auto;
+  margin-right: auto;
+  width: 420px;
 }
 
 .want-sign-up-title{
-  width: 100%;
-  margin: 0px;
-  height: 150px;
-  .display-box-center;
-  .display-box-vertical;
-  -moz-box-pack:center;
-  -webkit-box-pack:center;
-  box-pack:center;
-}
-
-.want-sign-up-title-text{
-  font-size:45px;
-  margin: 0px;
-}
-
-.want-sign-up-user-account{
-  width: 100%;
-  .display-box-center;
-  .display-box-vertical;
-}
-
-.want-sign-up-user-email-label{
-  .input-label-text;
-}
-
-.want-sign-up-user-password-label{
-  .input-label-text;
-}
-
-.want-sign-up-user-email-input{
-  .input-frame
-}
-
-.want-sign-up-user-password-input{
-  .input-frame
+  text-align: center;
+  font-size: 42px;
+  opacity: 0.3;
+  padding-top: 60px;
+  padding-bottom: 50px;
 }
 
 .want-sign-up-user-info{
-  width: 100%;
-  margin-top: 50px;
-  .display-box-center;
-  .display-box-vertical;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: red;
+}
+//
+//.want-sign-up-title {
+//  width: 100%;
+//  margin: 0px;
+//  height: 150px;
+//
+//  -moz-box-pack: center;
+//  -webkit-box-pack: center;
+//  box-pack: center;
+//}
+//
+//.want-sign-up-title-text {
+//  font-size: 45px;
+//  margin: 0px;
+//}
+//
+//.want-sign-up-user-account {
+//  width: 100%;
+//
+//}
+//
+//
+//.want-sign-up-user-headImg-text {
+//  font-size: 25px;
+//  color: #c3c3c3;
+//}
+//
+//.want-sign-up-user-preview-image-frame {
+//  margin-top: 20px;
+//  font-size: 0px;
+//}
+
+//.want-sign-up-user-preview-image{
+//  width: 100px;
+//  height: 100px;
+//  overflow: hidden;
+//  background-color: #e3e3e3;
+//}
+
+.want-sign-up-user-headImg-input {
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  z-index: -1;
 }
 
-.want-sign-up-user-nickname-label{
-  .input-label-text;
-}
+//.want-sign-up-user-headImg-upload-button{
+//  width: 100px;
+//  height: 50px;
+//  background-color: yellow;
+//  .display-box-center;
+//  -moz-box-pack:center;
+//  -webkit-box-pack:center;
+//  box-pack:center;
+//  cursor:default;
+//}
 
-.want-sign-up-user-nickname-input{
-  .input-frame
-}
+//.want-sign-up-button{
+//  width: 100%;
+//  height:80px;
+//  background-color: #c3c3c3;
+//  position: absolute;
+//  bottom: 0;
+//  left: 0;
+//  .display-box-center;
+//  -moz-box-pack:center;
+//  -webkit-box-pack:center;
+//  box-pack:center;
+//}
 
-.want-sign-up-user-headImg-text{
+.want-sign-up-button-text {
   font-size: 25px;
-  color: #c3c3c3;
+  color: white;
 }
 
-.want-sign-up-user-preview-image-frame{
-  margin-top: 20px;
-  font-size: 0px;
+/****************** 重写的部分 ******************/
+
+.want-sign-up-input-title {
+  width: 420px;
+  text-align: left;
 }
 
-.want-sign-up-user-preview-image{
+.want-sign-up-input {
+  width: 420px;
+  height: 36px;
+  border: 0;
+  outline: none;
+  background-color: #F1F1F1;
+  padding: 12px 12px 12px 12px;
+  font-size: 24px;
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+
+.want-sign-up-input-title {
+  font-size: 18px;
+  opacity: 0.3;
+  font-weight: 400;
+}
+
+.want-sign-up-user-preview-image {
   width: 100px;
   height: 100px;
   overflow: hidden;
-  background-color: #e3e3e3;
+  cursor: pointer;
 }
 
-.want-sign-up-user-headImg-input{
-  width:0px;
-  height: 0px;
-  position: absolute;
-  z-index:-1;
+.want-sign-up-img-title {
+  opacity: 0.3;
 }
 
-.want-sign-up-user-headImg-upload-button{
+.want-sign-up-user-headImg-upload-button {
   width: 100px;
   height: 50px;
-  background-color: yellow;
-  .display-box-center;
-  -moz-box-pack:center;
-  -webkit-box-pack:center;
-  box-pack:center;
-  cursor:default;
-}
-
-.want-sign-up-button{
-  width: 100%;
-  height:80px;
-  background-color: #c3c3c3;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  .display-box-center;
-  -moz-box-pack:center;
-  -webkit-box-pack:center;
-  box-pack:center;
-}
-
-.want-sign-up-button-text{
-  font-size: 25px;
+  background-color: #ff5283;
+  line-height: 50px;
+  text-align: center;
   color: white;
+  cursor: pointer;
+}
+
+.want-sign-up-button {
+  width: 100%;
+  height: 70px;
+  background-color: @main-color;
 }
