@@ -11,7 +11,8 @@ class CommodityBrief extends Component {
             maskState: "want-mask",
             starState1: "want-brief-header-left1",
             starState2: "want-brief-header-left2",
-            arrowStatus: "want-brief-arrow"
+            arrowStatus: "want-brief-arrow",
+            likeIcon: "http://7xwfiz.com1.z0.glb.clouddn.com/like.svg"
         };
     }
 
@@ -86,6 +87,12 @@ class CommodityBrief extends Component {
         },"100");
     }
 
+    likeCommodity(){
+        this.setState({
+            likeIcon: "http://7xwfiz.com1.z0.glb.clouddn.com/likeActive.svg"
+        });
+    }
+
     render() {
         const {data}=this.props;
 
@@ -114,8 +121,8 @@ class CommodityBrief extends Component {
                          onMouseLeave={this.handleLeave.bind(this)}>
 
 
-                        <div className={this.state.starState1}>
-                            <img src="http://7xwfiz.com1.z0.glb.clouddn.com/like.svg"/>
+                        <div className={this.state.starState1} onClick={this.likeCommodity.bind(this)}>
+                            <img src={this.state.likeIcon}/>
                         </div>
                         <div className={this.state.starState2}>
                             <img src="http://7xwfiz.com1.z0.glb.clouddn.com/save.svg"/>

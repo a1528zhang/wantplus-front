@@ -8,6 +8,7 @@ export const RECOMMEND_COMMODITY_DETAIL = "RECOMMEND_COMMODITY_DETAIL";
 
 export const ADD_COMMODITY_URL = "ADD_COMMODITY_URL";
 
+
 export const SHOP_DATA = {
     exceptionName: "请求成功",
     state: 1,
