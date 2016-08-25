@@ -1,7 +1,75 @@
+@import "../mainPage.less";
+
 .want-shop-brief{
   float:left;
-  margin-left: 10px;
-  height:100px;
-  width:100px;
-  background-color: red;
+  width: 330px;
+  height: 330px;
+}
+
+.want-shop-innerbox{
+  width: 329px;
+  height: 329px;
+  margin: 0.5px;
+  background-color: white;
+}
+
+.want-shop-position{
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  margin: 44px 64px 54px 64px;
+  text-align: center;
+  img{
+    height: 100%;
+  }
+}
+
+.want-shop-mask{
+  .main-duration;
+  position: absolute;
+  width: 330px;
+  height: 330px;
+  background-color: black;
+  z-index: 10;
+  opacity: 0;
+  cursor: pointer;
+  &:hover{
+    opacity: 0.4;
+  }
+}
+
+.want-shop-name{
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  opacity: 0.4;
+}
+
+@media (max-width: 1360px) {
+  .want-shop-brief{
+    width: 281.25px;
+    height: 281.25px;
+  }
+
+  .want-shop-innerbox{
+    width: 280.25px;
+    height: 280.25px;
+  }
+
+  .want-shop-position{
+    width: 180.25px;
+    height: 180.25px;
+    margin: 30px 50px 40px 50px;
+  }
+
+  .want-shop-mask{
+    .main-duration;
+    width: 281.25px;
+    height: 281.25px;
+  }
+
+  .want-shop-name{
+    width: 100%;
+    height: 30px;
+  }
 }

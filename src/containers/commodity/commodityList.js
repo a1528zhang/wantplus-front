@@ -9,6 +9,7 @@ function mapStateToProps(state) {
     data:state.CommodityList.data,
     displayDetail:state.CommodityDetail.displayDetail,
     detailData:state.CommodityDetail.detailData,
+    recommendData:state.CommodityDetail.recommendData,
     commodityId:state.CommodityDetailPage.commodityId,
     originalUrl:state.CommodityDetailPage.originalUrl
   }

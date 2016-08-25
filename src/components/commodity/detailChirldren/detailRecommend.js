@@ -1,10 +1,25 @@
 import React, { Component, PropTypes } from 'react'
 import { render } from 'react-dom'
-
+import {RECOMMEND_DATA} from '../../../constants/constant'
 
 
 class DetailRecommend extends Component {
+
     render(){
+        const { recommendData } = this.props;
+        let recommendDataList = RECOMMEND_DATA;
+        let recommendList = recommendDataList.map(function(data){
+            return (
+                <div className="want-recommend-preview-outbox" key={data.userId}>
+                    <div className="want-recommend-mask"></div>
+                    <div className="want-recommend-preview-box">
+                        <div>
+                            <img src={data.commodityImg} />
+                        </div>
+                    </div>
+                </div>
+            )
+        });
 
         return (
             <div className="want-commodity-detail-recommend">
@@ -18,46 +33,7 @@ class DetailRecommend extends Component {
                 </div>
                 <div className="want-main-cutline"></div>
                 <div className="want-recommend-preview">
-                    <div className="want-recommend-preview-outbox">
-                        <div className="want-recommend-mask"></div>
-                        <div className="want-recommend-preview-box">
-                            <div>
-                                <img src="http://7xpmhh.com1.z0.glb.clouddn.com/pic9.jpg" />
-                            </div>
-                        </div>
-                    </div>
-                    <div className="want-recommend-preview-outbox">
-                        <div className="want-recommend-mask"></div>
-                        <div className="want-recommend-preview-box">
-                            <div>
-                                <img src="http://7xpmhh.com1.z0.glb.clouddn.com/pic8.jpg" />
-                            </div>
-                        </div>
-                    </div>
-                    <div className="want-recommend-preview-outbox">
-                        <div className="want-recommend-mask"></div>
-                        <div className="want-recommend-preview-box">
-                            <div>
-                                <img src="http://7xpmhh.com1.z0.glb.clouddn.com/pic7.jpg" />
-                            </div>
-                        </div>
-                    </div>
-                    <div className="want-recommend-preview-outbox">
-                        <div className="want-recommend-mask"></div>
-                        <div className="want-recommend-preview-box">
-                            <div>
-                                <img src="http://7xpmhh.com1.z0.glb.clouddn.com/pic6.jpg" />
-                            </div>
-                        </div>
-                    </div>
-                    <div className="want-recommend-preview-outbox">
-                        <div className="want-recommend-mask"></div>
-                        <div className="want-recommend-preview-box">
-                            <div>
-                                <img src="http://7xpmhh.com1.z0.glb.clouddn.com/pic5.jpg" />
-                            </div>
-                        </div>
-                    </div>
+                    {recommendList}
                 </div>
             </div>
         )

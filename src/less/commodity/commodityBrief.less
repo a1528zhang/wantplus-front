@@ -16,6 +16,8 @@
   height: 400px;
   background-color: white;
   margin: 30px;
+  box-shadow: 0px 3px 8px -4px rgba(0,0,0,0.15);
+  position: relative;
 }
 
 .want-commodity-brief{
@@ -31,32 +33,74 @@
   margin: 70px;
 }
 
+
+
+
+
 //briefHeader 样式
 .want-brief-header {
   overflow:hidden;
   width: 400px;
   height: 50px;
   position: absolute;
+  z-index: 200;
 }
 
-.want-brief-header-left{
+.want-brief-header-left1{
+  .price-duration;
   width: 50px;
   height: 50px;
-  float: left;
+  position: absolute;
   text-align: center;
-  img{
-    opacity: 0;
-    &:hover{
-      opacity: 1;
-    }
+  opacity: 0;
+  z-index: 20;
+}
+
+.want-brief-header-left1-hover{
+  .price-duration;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  text-align: center;
+  opacity: 0.4;
+  z-index: 20;
+  cursor: pointer;
+  &:hover{
+    opacity: 1;
+  }
+}
+
+.want-brief-header-left2{
+  .price-duration;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 50px;
+  text-align: center;
+  opacity: 0;
+  z-index: 20;
+}
+
+.want-brief-header-left2-hover{
+  .price-duration;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 50px;
+  text-align: center;
+  opacity: 0.4;
+  cursor: pointer;
+  z-index: 20;
+  &:hover{
+    opacity: 1;
   }
 }
 
 .want-brief-header-right{
   .price-duration;
   position: absolute;
-  top: 0px;
-  right:0px;
+  z-index: 1;
+  right: 0;
   font-size: 18px;
   height: 50px;
   line-height: 50px;
@@ -70,9 +114,6 @@
   }
 }
 
-
-
-
 .price-duration {
   transition-duration: 0.2s;
   -moz-transition-duration: 0.2s; /* Firefox 4 */
@@ -85,4 +126,85 @@
   -o-transition-timing-function: ease-in-out;
 }
 
+.want-brief-footer{
+  width: 128px;
+  height: 32px;
+  z-index: 20;
+  margin-top: 345px;
+  position: absolute;
+  margin-left: 20px;
+}
 
+.want-brief-userbox{
+  width:32px;
+  height: 32px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  img{
+    margin: 1px;
+    width: 30px;
+    border-radius: 50%;
+  }
+  div{
+    .price-duration;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    opacity: 0;
+    position: absolute;
+    border-radius: 50%;
+    margin: 1px;
+    cursor: pointer;
+    &:hover{
+      opacity: 0.4;
+    }
+  }
+}
+
+
+
+.want-brief-arrow{
+  opacity: 0;
+  position: absolute;
+  //right: 20px;
+}
+
+
+
+@media (max-width:1360px) {
+  .want-commodity-list{
+    width: 1167px;
+  }
+
+  .want-commodity-img{
+    width: 100%;
+    height: auto;
+  }
+
+  .want-commodity-outbox{
+    width: 347px;
+    height: 347px;
+    margin: 21px;
+    box-shadow: 0px 3px 8px -4px rgba(0,0,0,0.15);
+  }
+
+  .want-commodity-brief{
+    float: left;
+    width: 389px;
+    height: 389px;
+  }
+
+  .want-brief-header {
+    width: 347px;
+  }
+
+  .want-commodity-midbox{
+    width: 225px;
+    height: 225px;
+    margin: 61px;
+  }
+  .want-brief-footer{
+    margin-top: 300px;
+  }
+}

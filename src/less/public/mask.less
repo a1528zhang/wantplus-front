@@ -1,9 +1,8 @@
-
 .mask-duration {
-  transition-duration: 0.2s;
-  -moz-transition-duration: 0.2s; /* Firefox 4 */
-  -webkit-transition-duration: 0.2s; /* Safari 和 Chrome */
-  -o-transition-duration: 0.2s; /* Opera */
+  transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s; /* Firefox 4 */
+  -webkit-transition-duration: 0.3s; /* Safari 和 Chrome */
+  -o-transition-duration: 0.3s; /* Opera */
 
   transition-timing-function: ease-in-out;
   -moz-transition-timing-function: ease-in-out;
@@ -18,13 +17,65 @@
   width: 400px;
   height: 400px;
   background-color: white;
-  opacity: 0;
   position: absolute;
   cursor: pointer;
-  &:hover {
-    opacity: 0.8;
-  }
+  text-align: center;
+  opacity: 0;
+  font-size: 20px;
+}
+
+.want-mask-hover{
+  .mask-duration;
+  width: 400px;
+  height: 400px;
+  background-color: white;
+  position: absolute;
+  cursor: pointer;
+  text-align: center;
+  opacity: 0.9;
+  font-size: 20px;
 }
 
 
+.want-mask-inner{
+  .mask-duration;
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 163px;
+  height: 80px;
+}
+
+.want-onmask-commodity-name{
+  padding-top: 3px;
+  opacity: 0;
+}
+
+.want-onmask-commodity-uploader{
+  margin-top: 3px;
+  opacity: 0;
+}
+
+.want-mask-inner-hover{
+  .mask-duration;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 160px;
+}
+
+
+
+@media (max-width:1360px) {
+  .want-mask{
+    width: 347px;
+    height: 347px;
+  }
+
+  .want-mask-hover{
+    .mask-duration;
+    width: 347px;
+    height: 347px;
+  }
+}
 

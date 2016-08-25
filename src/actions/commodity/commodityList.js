@@ -1,21 +1,63 @@
-import {GET_ALL_COMMODITY,JSON_DATA,DISPLAY_COMMODITY_DETAIL,ADD_COMMODITY_URL} from "../../constants/constant"
+import {GET_ALL_COMMODITY,JSON_DATA,DISPLAY_COMMODITY_DETAIL,ADD_COMMODITY_URL,RECOMMEND_COMMODITY_DETAIL} from "../../constants/constant"
 
 export function getAllCommodity(){
+    let result ;
+    $.ajax({
+        type:"GET",
+        url:"http://121.42.136.146/wantplus/action/commodity/getAllLCommodity?page=1",
+        datatype:"json",
+        async: false,
+        success: function (data) {
+            result = JSON.parse(data).data;
+            console.log(result.userBrief);
+        }
+    });
     return {
         type:GET_ALL_COMMODITY,
-        data:JSON_DATA.data
+        data:result
     }
 }
 
-export function showCommodityDetail(data,displayDetail){
+export function showCommodityDetail(commdityId,displayDetail){
         //锁住滚动条
         $("body").attr("class","lock");
         $(".want-commodity-detail").css("overflow-y","auto");
+
+    let result = '';
+    $.ajax({
+        type:"GET",
+        url:"http://121.42.136.146/wantplus/action/commodity/getCommodityById?commodityId="+commdityId,
+        datatype:"json",
+        async: false,
+        success: function (data) {
+            result = JSON.parse(data).data;
+        }
+    });
+
     return {
         type:DISPLAY_COMMODITY_DETAIL,
         displayDetail:displayDetail,
-        detailData:data
-    }
+        detailData:result
+    };
+}
+
+export function showRecommodList(){
+
+    let result = '';
+    $.ajax({
+        type:"GET",
+        url:"http://121.42.136.146/wantplus/action/commodity/otherFromShop?commodityId="+commdityId,
+        datatype:"json",
+        async: false,
+        success: function (data) {
+            result = JSON.parse(data).data;
+        }
+    });
+
+    return {
+        type:RECOMMEND_COMMODITY_DETAIL,
+        recommodData:result
+    };
 }
 /**
  * 改变url地址

@@ -65,9 +65,28 @@
   }
 }
 
+.want-nav-click-active{
+  float: left;
+  margin-right: 40px;
+  opacity: 1;
+  cursor: pointer;
+}
+
 .want-nav-login{
   .nav-duration;
-  width: 100px;
+  float: right;
+  cursor: pointer;
+  margin-right: 20px;
+  font-size: 14px;
+  opacity: 0.4;
+  &:hover{
+    opacity: 0.8;
+  }
+}
+
+.want-nav-join{
+  .nav-duration;
+  width: 80px;
   height: 32px;
   background-color: @main-color;
   border-radius: 16px;
@@ -90,7 +109,6 @@
     color: white;
     font-size: 13px;
     display: block;
-    float: left;
   }
 }
 
@@ -129,5 +147,11 @@
     border: 0px;
     outline:none;
     background-color:transparent;
+  }
+}
+
+@media (max-width:1360px) {
+  .want-nav-midbox{
+    width: 1125px;
   }
 }

@@ -7,8 +7,15 @@ class ShopBrief extends Component {
         const {data}=this.props;
         return (
             <div className = "want-shop-brief">
-                <p >shopid: {data.shopId}</p>
-                <p>shopname:{data.shopName}</p>
+                <div className = "want-shop-mask"></div>
+                <div className = "want-shop-innerbox">
+                    <div className="want-shop-position">
+                        <img src={data.commodityImg} />
+                        <div className="want-shop-name">
+                            {data.shopName}
+                        </div>
+                    </div>
+                </div>
             </div>
         )
     }
