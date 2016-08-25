@@ -1,6 +1,7 @@
 import React, {Component, PropTypes } from 'react'
 import { Router, Route, Link } from 'react-router'
 import { render } from 'react-dom';
+import { setCookie } from '../../utils/stringUtils'
 
 class Register extends Component{
     uploadButtonClick(){
@@ -16,26 +17,32 @@ class Register extends Component{
 
         var xhr = new XMLHttpRequest();
         xhr.open("post", url, true);
-        xhr.onload = function () {
-            alert("上传完成!");
-        };
+        xhr.onreadystatechange = callback;
+
+        function callback() {
+            //接收响应数据
+            //判断对象的状态是交互完成
+            if (xhr.readyState == 4) {
+                //判断http的交互是否成功
+                if (xhr.status == 200) {
+                    //获取服务漆器端返回的数据
+                    //获取服务器段输出的纯文本数据
+                    var responseText = xhr.responseText;
+                    var data = JSON.parse(responseText);
+                    console.log(data.data.username);
+                    if (data.data != null && data.data != ''){
+                        console.log(data.data.username);
+                        setCookie("username",data.data.username);
+                        setCookie("headImg",data.data.headImg);
+                        setCookie("userId",data.data.userId);
+                    }
+                    console.log(responseText);
+                } else {
+                    console.log("请求出错");
+                }
+            }
+        }
         xhr.send(form);
-        //$.ajaxFileUpload({
-        //    type:"POST",
-        //    url:'http://localhost:8080/wantplus/action/user/register',
-        //    secureuri:false,
-        //    fileElementId:'file',//file标签的id
-        //    dataType: "json",//返回数据的类型
-        //    enctype:"multipart/form-data",
-        //    data:{
-        //        username:$(".want-sign-up-user-email-input").val(),
-        //        password:$(".want-sign-up-user-password-input").val(),
-        //        nickName:$(".want-sign-up-user-nickname-input").val()
-        //    },
-        //    success: function (data) {
-        //        console.log(data);
-        //    }
-        //});
     }
     imgSelect(){
         $(".want-sign-up-user-headImg-input").click();
