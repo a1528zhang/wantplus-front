@@ -23,7 +23,8 @@ export function signIn(displayLogin){
         async: false,
         success: function (data) {
             let user = JSON.parse(data).data
-            if(JSON.parse(data).state == 1 || JSON.parse(data).state == '1'){
+            let state = JSON.parse(data).state;
+            if(state == 1 || state == '1'){
                 setCookie('username',user.username);
                 if(user.nickName == "" || user.nickName == undefined){
                     setCookie('nickName',user.username);
@@ -34,8 +35,10 @@ export function signIn(displayLogin){
                 setCookie('isSignIn',isSignIn);
                 $(".want-login").css("display","none");
                 readUserInfo();
+            }else if(state == 0 || state == '0'){
+                console.log( JSON.parse(data).exceptionName);
             }
-            console.log( user);
+
         }
     });
     return {

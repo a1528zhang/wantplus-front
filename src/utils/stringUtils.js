@@ -38,19 +38,21 @@ export function logout(){
         dataType: "json",//返回数据的类型
         async: false,
         success: function (data) {
-            console.log(data);
             $(".want-nav-un-login-block").css("display","block");
             $(".want-nav-has-login-block").css("display","none");
         },
         error:function(xhr){
             //xhr.status应该是430，由于跨域的原因变为0了，这里要判断一下
+            console.log(xhr.status);
+            $(".want-nav-un-login-block").css("display","block");
+            $(".want-nav-has-login-block").css("display","none");
+        },
+        complete(){
             setCookie('username','');
             setCookie('headImg','');
             setCookie('isSignIn',false);
             setCookie('userId','');
             setCookie('nickName','');
-            $(".want-nav-un-login-block").css("display","block");
-            $(".want-nav-has-login-block").css("display","none");
         }
     })
 }
