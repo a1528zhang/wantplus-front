@@ -1,4 +1,4 @@
-import {GET_ALL_COMMODITY,JSON_DATA,DISPLAY_COMMODITY_DETAIL,ADD_COMMODITY_URL,RECOMMEND_COMMODITY_DETAIL} from "../../constants/constant"
+import {GET_ALL_COMMODITY,SHOW_COMMODITY_RECOMMEND,DISPLAY_COMMODITY_DETAIL,ADD_COMMODITY_URL,RECOMMEND_COMMODITY_DETAIL} from "../../constants/constant"
 
 export function getAllCommodity(){
     let result ;
@@ -41,6 +41,24 @@ export function showCommodityDetail(commdityId,displayDetail){
     };
 }
 
+export function showCommodityRecommend(commodityDetailId){
+    let result ;
+    $.ajax({
+        type:"GET",
+        url:"http://121.42.136.146/wantplus/action/commodity/otherFromShop?commodityId="+commodityDetailId,
+        datatype:"json",
+        async: false,
+        success: function (data) {
+            result = JSON.parse(data).data;
+            //console.log(result);
+        }
+    });
+    return {
+        type:SHOW_COMMODITY_RECOMMEND,
+        recommendData:result
+    }
+}
+
 export function showRecommodList(){
 
     let result = '';
@@ -59,11 +77,11 @@ export function showRecommodList(){
         recommodData:result
     };
 }
-/**
+/*
  * 改变url地址
  * @param commodityId
  * @returns {{type, displayDetail: *, detailData: *}}
- */
+ **/
 export function addCommodityUrl(commodityId){
     let originalUrl  = window.location.href;
     let start = originalUrl.indexOf("/#/")+3;

@@ -7,9 +7,10 @@ import * as Actions from '../../actions/commodity/commodityDetail'
 function mapStateToProps(state) {
     return {
         displayDetail:state.CommodityDetail.displayDetail,
-        detailData:state.CommodityDetail.detailData,
-        originalUrl :state.CommodityDetailPage.originalUrl
-    }
+        originalUrl :state.CommodityDetailPage.originalUrl,
+        urlDetailData:state.CommodityDetail.detailData,
+        recommendData:state.CommodityDetail.recommendDataMask
+    };
 }
 //将action中的所有方法绑定到props上,这样组件就有了绑定的方法
 function mapDispatchToProps(dispatch) {//绑定action文件

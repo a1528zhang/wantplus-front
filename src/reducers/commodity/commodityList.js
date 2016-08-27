@@ -9,7 +9,7 @@ export default function commodityList(state = initState,action){
         case GET_ALL_COMMODITY:
             return Object.assign({}, state, {
                 data:action.data
-            })
+            });
         default:
             return state
     }

@@ -28,13 +28,15 @@ class CommodityList extends Component {
     }
 
     render(){
-        const { data,showCommodityDetail,addCommodityUrl} = this.props;
+        const { data,showCommodityDetail,addCommodityUrl,showCommodityRecommend} = this.props;
+        console.log(data);
         let commodityList = data.map(function(data){
             return (
                 <CommodityBrief
                     key={data.commodityId}
                     data ={data}
                     showCommodityDetail = {showCommodityDetail}
+                    showCommodityRecommend = {showCommodityRecommend}
                     addCommodityUrl = {addCommodityUrl}/>
             )
         });

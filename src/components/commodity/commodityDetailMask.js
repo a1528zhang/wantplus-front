@@ -7,20 +7,22 @@ class CommodityDetailMask extends Component {
 
 
     handleClicked(event) {
-        const {detailData,hiddenCommodityDetail,originalUrl} = this.props;
+        const {urlDetailData,hiddenCommodityDetail,originalUrl} = this.props;
         console.log(event.target.classList[0]);
         if (event.target.classList[0] == "want-commodity-detail") {
-            hiddenCommodityDetail("none", detailData,originalUrl);
+            hiddenCommodityDetail("none", urlDetailData,originalUrl);
         }
     }
 
     render() {
-        const {detailData,displayDetail} = this.props;
+        const {urlDetailData,recommendData,displayDetail} = this.props;
+
+        console.log(recommendData+"beings");
 
         return (
             <div className="want-commodity-detail" style={{display:displayDetail}}
                  onClick={this.handleClicked.bind(this)}>
-                <CommodityDetail detailData={detailData} />
+                <CommodityDetail detailData={urlDetailData} recommendData={recommendData} />
             </div>
         )
     }

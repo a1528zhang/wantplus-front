@@ -1,14 +1,14 @@
 import React, { Component, PropTypes } from 'react'
 import { render } from 'react-dom'
 import DetailRecommend from './detailRecommend'
-import { USER_HEAD_IMG } from '../../../constants/constant'
 
 
 
 class CommodityDetail extends Component {
+
     render(){
         const { detailData,recommendData } = this.props;
-        console.log(detailData);
+        console.log(recommendData);
         let userHeadImg = detailData.userBrief;
         let userHeadimgList;
         if(detailData.userBrief == null || detailData.userBrief.length == 0 ){
@@ -94,7 +94,9 @@ class CommodityDetail extends Component {
 
                     <div className="want-commodity-detail-related">
                         <div className="want-commodity-related">RELATED</div>
+
                         <DetailRecommend recommendData={recommendData}/>
+
                     </div>
                     <div className="want-commodity-detail-comment">
                         <div className="want-comment-title">WRITE THE FIRST COMMENT</div>

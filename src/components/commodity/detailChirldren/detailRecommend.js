@@ -1,16 +1,16 @@
 import React, { Component, PropTypes } from 'react'
 import { render } from 'react-dom'
-import {RECOMMEND_DATA} from '../../../constants/constant'
 
 
 class DetailRecommend extends Component {
 
     render(){
         const { recommendData } = this.props;
-        let recommendDataList = RECOMMEND_DATA;
+        console.log(recommendData);
+        let recommendDataList = recommendData;
         let recommendList = recommendDataList.map(function(data){
             return (
-                <div className="want-recommend-preview-outbox" key={data.userId}>
+                <div className="want-recommend-preview-outbox" key={data.commodityId}>
                     <div className="want-recommend-mask"></div>
                     <div className="want-recommend-preview-box">
                         <div>

@@ -1,9 +1,11 @@
-import {ADD_COMMODITY_URL} from "../../constants/constant"
+import {ADD_COMMODITY_URL,GET_COMMODITY_DETAIL_DATA,GET_COMMODITY_DETAIL_RECOMMEND_DATA} from "../../constants/constant"
 import React from 'react'
 
 const initState = {
     commodityId:0,
-    originalUrl:""
+    originalUrl:"",
+    data:[],
+    recommendData:[]
 }
 
 export default function commodityDetailPage(state = initState,action){
@@ -12,6 +14,14 @@ export default function commodityDetailPage(state = initState,action){
             return Object.assign({}, state, {
                 commodityId:action.commodityId,
                 originalUrl:action.originalUrl
+            })
+        case GET_COMMODITY_DETAIL_DATA:
+            return Object.assign({}, state, {
+                data:action.data
+            })
+        case GET_COMMODITY_DETAIL_RECOMMEND_DATA:
+            return Object.assign({}, state, {
+                recommendData:action.recommendData
             })
         default:
             return state

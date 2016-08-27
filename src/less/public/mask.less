@@ -1,8 +1,26 @@
+.mask-duration-delay {
+  transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s; /* Firefox 4 */
+  -webkit-transition-duration: 0.5s; /* Safari 和 Chrome */
+  -o-transition-duration: 0.5s; /* Opera */
+
+  transition-timing-function: ease-in-out;
+  -moz-transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+
+  transition-delay:0.2s;
+  -moz-transition-delay:0.2s;
+  -webkit-transition-delay:0.2s;
+  -o-transition-delay:0.2s;
+
+}
+
 .mask-duration {
-  transition-duration: 0.3s;
-  -moz-transition-duration: 0.3s; /* Firefox 4 */
-  -webkit-transition-duration: 0.3s; /* Safari 和 Chrome */
-  -o-transition-duration: 0.3s; /* Opera */
+  transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s; /* Firefox 4 */
+  -webkit-transition-duration: 0.5s; /* Safari 和 Chrome */
+  -o-transition-duration: 0.5s; /* Opera */
 
   transition-timing-function: ease-in-out;
   -moz-transition-timing-function: ease-in-out;
@@ -44,25 +62,63 @@
   margin-right: auto;
   margin-top: 163px;
   height: 80px;
+  //background-color: red;
 }
 
 .want-onmask-commodity-name{
+  .mask-duration;
   padding-top: 3px;
   opacity: 0;
 }
 
+.want-onmask-commodity-name-hover{
+  .mask-duration;
+  padding-top: 0;
+  opacity: 1;
+}
+
 .want-onmask-commodity-uploader{
-  margin-top: 3px;
+  .mask-duration-delay;
+  padding-top: 3px;
   opacity: 0;
 }
 
-.want-mask-inner-hover{
-  .mask-duration;
-  width: 200px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 160px;
+.want-onmask-commodity-uploader-hover{
+  .mask-duration-delay;
+  padding-top: 0;
+  opacity: 0.4;
 }
+
+.want-brief-price {
+  .mask-duration;
+  padding-right: 0;
+}
+
+.want-brief-price-hover {
+  .mask-duration;
+  padding-right: 20px;
+}
+
+.want-brief-arrow{
+  .mask-duration;
+  opacity: 0;
+  position: absolute;
+  right: 10px;
+}
+
+.want-brief-arrow-hover{
+  .mask-duration;
+  opacity: 1;
+  right: 20px;
+  position: absolute;
+}
+//.want-mask-inner-hover{
+//  .mask-duration;
+//  width: 200px;
+//  margin-left: auto;
+//  margin-right: auto;
+//  margin-top: 160px;
+//}
 
 
 

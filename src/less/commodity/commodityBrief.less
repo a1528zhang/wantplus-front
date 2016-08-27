@@ -1,52 +1,48 @@
 @import "../mainPage.less";
 
-.want-commodity-list{
+.want-commodity-list {
   width: 1380px;
   margin-left: auto;
   margin-right: auto;
 }
 
-.want-commodity-img{
+.want-commodity-img {
   width: 100%;
   height: auto;
 }
 
-.want-commodity-outbox{
+.want-commodity-outbox {
   width: 400px;
   height: 400px;
   background-color: white;
   margin: 30px;
-  box-shadow: 0px 3px 8px -4px rgba(0,0,0,0.15);
+  box-shadow: 0px 3px 8px -4px rgba(0, 0, 0, 0.15);
   position: relative;
 }
 
-.want-commodity-brief{
+.want-commodity-brief {
   float: left;
   width: 460px;
   height: 460px;
 }
 
-.want-commodity-midbox{
+.want-commodity-midbox {
   width: 260px;
   height: 260px;
   position: absolute;
   margin: 70px;
 }
 
-
-
-
-
 //briefHeader 样式
 .want-brief-header {
-  overflow:hidden;
+  overflow: hidden;
   width: 400px;
   height: 50px;
   position: absolute;
   z-index: 200;
 }
 
-.want-brief-header-left1{
+.want-brief-header-left1 {
   .price-duration;
   width: 50px;
   height: 50px;
@@ -56,7 +52,7 @@
   z-index: 20;
 }
 
-.want-brief-header-left1-hover{
+.want-brief-header-left1-hover {
   .price-duration;
   width: 50px;
   height: 50px;
@@ -65,12 +61,12 @@
   opacity: 0.4;
   z-index: 20;
   cursor: pointer;
-  &:hover{
+  &:hover {
     opacity: 1;
   }
 }
 
-.want-brief-header-left2{
+.want-brief-header-left2 {
   .price-duration;
   width: 50px;
   height: 50px;
@@ -81,7 +77,7 @@
   z-index: 20;
 }
 
-.want-brief-header-left2-hover{
+.want-brief-header-left2-hover {
   .price-duration;
   width: 50px;
   height: 50px;
@@ -91,12 +87,12 @@
   opacity: 0.4;
   cursor: pointer;
   z-index: 20;
-  &:hover{
+  &:hover {
     opacity: 1;
   }
 }
 
-.want-brief-header-right{
+.want-brief-header-right {
   .price-duration;
   position: absolute;
   z-index: 1;
@@ -109,7 +105,7 @@
   cursor: pointer;
   background-color: @main-color;
   color: white;
-  &:hover{
+  &:hover {
     background-color: @main-color-hover;
   }
 }
@@ -126,7 +122,7 @@
   -o-transition-timing-function: ease-in-out;
 }
 
-.want-brief-footer{
+.want-brief-footer {
   width: 128px;
   height: 32px;
   z-index: 20;
@@ -135,18 +131,18 @@
   margin-left: 20px;
 }
 
-.want-brief-userbox{
-  width:32px;
+.want-brief-userbox {
+  width: 32px;
   height: 32px;
   background-color: white;
   border-radius: 50%;
   position: absolute;
-  img{
+  img {
     margin: 1px;
     width: 30px;
     border-radius: 50%;
   }
-  div{
+  div {
     .price-duration;
     width: 30px;
     height: 30px;
@@ -156,40 +152,30 @@
     border-radius: 50%;
     margin: 1px;
     cursor: pointer;
-    &:hover{
+    &:hover {
       opacity: 0.4;
     }
   }
 }
 
-
-
-.want-brief-arrow{
-  opacity: 0;
-  position: absolute;
-  //right: 20px;
-}
-
-
-
-@media (max-width:1360px) {
-  .want-commodity-list{
+@media (max-width: 1360px) {
+  .want-commodity-list {
     width: 1167px;
   }
 
-  .want-commodity-img{
+  .want-commodity-img {
     width: 100%;
     height: auto;
   }
 
-  .want-commodity-outbox{
+  .want-commodity-outbox {
     width: 347px;
     height: 347px;
     margin: 21px;
-    box-shadow: 0px 3px 8px -4px rgba(0,0,0,0.15);
+    box-shadow: 0px 3px 8px -4px rgba(0, 0, 0, 0.15);
   }
 
-  .want-commodity-brief{
+  .want-commodity-brief {
     float: left;
     width: 389px;
     height: 389px;
@@ -199,12 +185,13 @@
     width: 347px;
   }
 
-  .want-commodity-midbox{
+  .want-commodity-midbox {
     width: 225px;
     height: 225px;
     margin: 61px;
   }
-  .want-brief-footer{
+
+  .want-brief-footer {
     margin-top: 300px;
   }
 }
