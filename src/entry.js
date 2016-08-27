@@ -17,4 +17,4 @@ let Main = React.createClass({
     }
 });
 
-ReactDOM.render(React.createElement(Main),document.getElementById('content'));
+ReactDOM.render(<Main />,document.getElementById('content'));
