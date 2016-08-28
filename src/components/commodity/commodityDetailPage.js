@@ -17,10 +17,13 @@ class CommodityDetailPage extends Component {
 
     }
     render(){
-        const { urlDetailData, recommendData} = this.props;
+        const { urlDetailData, recommendData,fromRecommendGetDetailsData} = this.props;
         return (
             <div className = "want-commodity-detail-page">
-                <CommodityDetail detailData={urlDetailData} recommendData={recommendData} />
+                <CommodityDetail
+                    detailData={urlDetailData}
+                    recommendData={recommendData}
+                    fromRecommendGetDetailsData={fromRecommendGetDetailsData}/>
             </div>
         )
     }

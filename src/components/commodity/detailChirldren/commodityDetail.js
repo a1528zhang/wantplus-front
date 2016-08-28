@@ -7,8 +7,8 @@ import DetailRecommend from './detailRecommend'
 class CommodityDetail extends Component {
 
     render(){
-        const { detailData,recommendData } = this.props;
-        console.log(recommendData);
+        const { detailData,recommendData,fromRecommendGetDetailsData } = this.props;
+
         let userHeadImg = detailData.userBrief;
         let userHeadimgList;
         if(detailData.userBrief == null || detailData.userBrief.length == 0 ){
@@ -30,7 +30,6 @@ class CommodityDetail extends Component {
 
         return (
                 <div className="want-commodity-detail-content">
-
                     <div className="want-commodity-detail-header">
                         <div className="want-commodity-detail-imgbox">
                             <div className="want-commodity-detail-midimgbox">
@@ -95,7 +94,8 @@ class CommodityDetail extends Component {
                     <div className="want-commodity-detail-related">
                         <div className="want-commodity-related">RELATED</div>
 
-                        <DetailRecommend recommendData={recommendData}/>
+                        <DetailRecommend recommendData={recommendData}
+                                         fromRecommendGetDetailsData={fromRecommendGetDetailsData}/>
 
                     </div>
                     <div className="want-commodity-detail-comment">

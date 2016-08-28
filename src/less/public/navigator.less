@@ -1,4 +1,4 @@
-@import "../mainPage.less";
+//@import "../mainPage.less";
 
 .want-nav-box{
   width: 100%;
@@ -42,20 +42,8 @@
   float: left;
 }
 
-.nav-duration {
-  transition-duration: 0.2s;
-  -moz-transition-duration: 0.2s; /* Firefox 4 */
-  -webkit-transition-duration: 0.2s; /* Safari 和 Chrome */
-  -o-transition-duration: 0.2s; /* Opera */
-
-  transition-timing-function: ease-in-out;
-  -moz-transition-timing-function: ease-in-out;
-  -webkit-transition-timing-function: ease-in-out;
-  -o-transition-timing-function: ease-in-out;
-}
-
 .want-nav-click{
-  .nav-duration;
+  .main-duration;
   float: left;
   margin-right: 40px;
   opacity: 0.6;
@@ -73,7 +61,7 @@
 }
 
 .want-nav-login{
-  .nav-duration;
+  .main-duration;
   float: right;
   cursor: pointer;
   margin-right: 20px;
@@ -85,7 +73,7 @@
 }
 
 .want-nav-join{
-  .nav-duration;
+  .main-duration;
   width: 80px;
   height: 32px;
   background-color: @main-color;

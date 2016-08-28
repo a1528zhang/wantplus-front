@@ -10,7 +10,7 @@ class CommodityList extends Component {
 
     componentDidMount(){
         const {getAllCommodity} = this.props;
-        getAllCommodity();
+        getAllCommodity(1);
 
         let originalUrl  = window.location.href;
         let getMyRouter = cutUrl(originalUrl);
@@ -29,7 +29,7 @@ class CommodityList extends Component {
 
     render(){
         const { data,showCommodityDetail,addCommodityUrl,showCommodityRecommend} = this.props;
-        console.log(data);
+
         let commodityList = data.map(function(data){
             return (
                 <CommodityBrief

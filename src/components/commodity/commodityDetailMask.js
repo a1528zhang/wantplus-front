@@ -8,7 +8,7 @@ class CommodityDetailMask extends Component {
 
     handleClicked(event) {
         const {urlDetailData,hiddenCommodityDetail,originalUrl} = this.props;
-        console.log(event.target.classList[0]);
+
         if (event.target.classList[0] == "want-commodity-detail") {
             hiddenCommodityDetail("none", urlDetailData,originalUrl);
         }

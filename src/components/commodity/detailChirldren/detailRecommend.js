@@ -4,14 +4,21 @@ import { render } from 'react-dom'
 
 class DetailRecommend extends Component {
 
+    recommendCommodityClick(recommendCommodityId){
+        const {fromRecommendGetDetailsData} = this.props;
+        fromRecommendGetDetailsData(recommendCommodityId);
+    };
+
+
     render(){
         const { recommendData } = this.props;
-        console.log(recommendData);
+
+
         let recommendDataList = recommendData;
         let recommendList = recommendDataList.map(function(data){
             return (
-                <div className="want-recommend-preview-outbox" key={data.commodityId}>
-                    <div className="want-recommend-mask"></div>
+                <div className="want-recommend-preview-outbox" key={data.commodityId} >
+                    <div className="want-recommend-mask" onClick={this.recommendCommodityClick.bind(this,data.commodityId)}></div>
                     <div className="want-recommend-preview-box">
                         <div>
                             <img src={data.commodityImg} />
@@ -19,7 +26,7 @@ class DetailRecommend extends Component {
                     </div>
                 </div>
             )
-        });
+        },this);
 
         return (
             <div className="want-commodity-detail-recommend">

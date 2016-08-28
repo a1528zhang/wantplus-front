@@ -1,16 +1,5 @@
-.want-commodity-detail-duration {
-  transition-duration: 0.2s;
-  -moz-transition-duration: 0.2s; /* Firefox 4 */
-  -webkit-transition-duration: 0.2s; /* Safari 和 Chrome */
-  -o-transition-duration: 0.2s; /* Opera */
-  transition-timing-function: ease-in-out;
-  -moz-transition-timing-function: ease-in-out;
-  -webkit-transition-timing-function: ease-in-out;
-  -o-transition-timing-function: ease-in-out;
-}
-
 .want-commodity-detail {
-  .want-commodity-detail-duration;
+  .main-duration;
   position: fixed;
   z-index: 1000;
   top: 0px;
@@ -54,7 +43,7 @@
 }
 
 .want-commodity-detail-like {
-  .want-commodity-detail-duration;
+  .main-duration;
   width: 130px;
   height: 100%;
   float: left;
@@ -66,7 +55,7 @@
 }
 
 .want-commodity-detail-save {
-  .want-commodity-detail-duration;
+  .main-duration;
   width: 130px;
   height: 100%;
   float: left;
@@ -156,9 +145,9 @@
   font-size: 24px;
   font-weight: 200;
   span{
-    .want-commodity-detail-duration;
+    .main-duration;
     padding: 16px 28px;
-    background-color: #3EDDBF;
+    background-color: @main-color;
     cursor: pointer;
     &:hover{
       box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
@@ -176,7 +165,7 @@
 .want-commodity-detail-shareleft {
   float: left;
   img{
-    .want-commodity-detail-duration;
+    .main-duration;
     cursor: pointer;
     height: 40px;
     margin-left: 3px;
@@ -200,7 +189,7 @@
 }
 
 .want-commodity-detail-right{
-  .want-commodity-detail-duration;
+  .main-duration;
   height: 40px;
   width: 200px;
   float: left;
@@ -230,7 +219,6 @@
 .want-commodity-related-one {
   width: 100%;
   height: 294px;
-  background-color: yellow;
 }
 
 .want-commodity-related {
@@ -247,7 +235,6 @@
 
 .want-commodity-detail-userbox {
   float: left;
-
   span {
     text-align: center;
     line-height: 48px;
@@ -257,7 +244,7 @@
   }
 
   div{
-    .want-commodity-detail-duration;
+    .main-duration;
     cursor: pointer;
     position: absolute;
     width: 48px;
@@ -320,7 +307,7 @@
     border-radius: 50%;
   }
   div{
-    .want-commodity-detail-duration;
+    .main-duration;
     position: absolute;
     width: 48px;
     height: 48px;

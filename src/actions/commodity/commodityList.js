@@ -1,10 +1,10 @@
 import {GET_ALL_COMMODITY,SHOW_COMMODITY_RECOMMEND,DISPLAY_COMMODITY_DETAIL,ADD_COMMODITY_URL,RECOMMEND_COMMODITY_DETAIL} from "../../constants/constant"
 
-export function getAllCommodity(){
+export function getAllCommodity(pageNumber){
     let result ;
     $.ajax({
         type:"GET",
-        url:"http://121.42.136.146/wantplus/action/commodity/getAllLCommodity?page=1",
+        url:"http://121.42.136.146/wantplus/action/commodity/getAllLCommodity?page="+pageNumber,
         datatype:"json",
         async: false,
         success: function (data) {
