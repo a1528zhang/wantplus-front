@@ -14,11 +14,13 @@ class CommodityDetailMask extends Component {
         */
         const {urlDetailData,hiddenCommodityDetail,originalUrl} = this.props;
 
-
-        const {wantCommodityDetail} = this.refs;
-        if (wantCommodityDetail.className == "want-commodity-detail") {
-            hiddenCommodityDetail("none", urlDetailData,originalUrl);
+        if (event.target.classList[0] == "want-commodity-detail") {
+            hiddenCommodityDetail("none",urlDetailData,originalUrl);
         }
+        //const {wantCommodityDetail} = this.refs;
+        //if (wantCommodityDetail.className == "want-commodity-detail") {
+        //    hiddenCommodityDetail("none", urlDetailData,originalUrl);
+        //}
     }
 
     render() {

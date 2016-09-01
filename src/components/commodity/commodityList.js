@@ -8,7 +8,7 @@ import { cutUrl } from '../../utils/stringUtils'
 
 class CommodityList extends Component {
 
-    componentDidMount(){
+    componentDidMount() {
 
         //从 redux 中获取的方法
         const {getAllCommodity} = this.props;
@@ -17,35 +17,35 @@ class CommodityList extends Component {
         getAllCommodity(1);
 
         //获取当前网页地址栏中的地址信息
-        let originalUrl  = window.location.href;
+        let originalUrl = window.location.href;
 
         //切取 url 中轩然模块的名字
         let getMyRouter = cutUrl(originalUrl);
 
         //地址栏目中的状态改变
-        if( getMyRouter == ''){
+        if (getMyRouter == '') {
             $('#want-nav-homepage-id').attr(
-                'class','want-nav-click-active'
+                'class', 'want-nav-click-active'
             );
             $('#want-nav-shoplist-id').attr(
-                'class','want-nav-click'
+                'class', 'want-nav-click'
             );
-        }else {
+        } else {
             console.log('获取地址栏错误');
         }
     }
 
-    render(){
+    render() {
         const { data,showCommodityDetail,addCommodityUrl,showCommodityRecommend} = this.props;
 
-        let commodityList = data.map(function(data){
+        let commodityList = data.map(function (data) {
             return (
                 <CommodityBrief
                     key={data.commodityId}
-                    data ={data}
-                    showCommodityDetail = {showCommodityDetail}
-                    showCommodityRecommend = {showCommodityRecommend}
-                    addCommodityUrl = {addCommodityUrl}/>
+                    data={data}
+                    showCommodityDetail={showCommodityDetail}
+                    showCommodityRecommend={showCommodityRecommend}
+                    addCommodityUrl={addCommodityUrl}/>
             )
         });
         return (
