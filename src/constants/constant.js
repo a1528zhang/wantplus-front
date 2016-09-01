@@ -1,5 +1,10 @@
+//首页获取所有商品
 export const GET_ALL_COMMODITY = "GET_ALL_COMMODITY";
+
+//
 export const DISPLAY_COMMODITY_DETAIL = "DISPLAY_COMMODITY_DETAIL";
+
+//获取所有商店的列表
 export const GET_ALL_SHOP = "GET_ALL_SHOP";
 
 export const HIDDEN_COMMODITY_DETAIL = "HIDDEN_COMMODITY_DETAIL";

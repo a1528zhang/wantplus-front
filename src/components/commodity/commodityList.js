@@ -9,12 +9,20 @@ import { cutUrl } from '../../utils/stringUtils'
 class CommodityList extends Component {
 
     componentDidMount(){
+
+        //从 redux 中获取的方法
         const {getAllCommodity} = this.props;
+
+        //获取商品列表信息,参数是页数
         getAllCommodity(1);
 
+        //获取当前网页地址栏中的地址信息
         let originalUrl  = window.location.href;
+
+        //切取 url 中轩然模块的名字
         let getMyRouter = cutUrl(originalUrl);
 
+        //地址栏目中的状态改变
         if( getMyRouter == ''){
             $('#want-nav-homepage-id').attr(
                 'class','want-nav-click-active'

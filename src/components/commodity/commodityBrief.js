@@ -5,25 +5,34 @@ import BriefFooter from '../commodity/briefChirldren/briefFooter'
 
 class CommodityBrief extends Component {
 
-
+    //点击遮罩
     handleClicked() {
         const {data,showCommodityDetail,addCommodityUrl,showCommodityRecommend} = this.props;
+        //在地址栏中加入商品详情的地址
         addCommodityUrl(data.commodityId);
+        //显示遮罩和被点击商品的详情
         showCommodityDetail(data.commodityId, "block");
+        //显示被点击商品的相关推荐商品
         showCommodityRecommend(data.commodityId);
     }
 
     handleHover() {
         const { briefHeaderLeft1, briefHeaderLeft2, wantMask, onmaskCommodityName, onmaskCommodityUploader } = this.refs;
+        //点赞按钮 hover 状态
         briefHeaderLeft1.className = "want-brief-header-left1-hover";
+        //收藏按钮 hover 状态
         briefHeaderLeft2.className = "want-brief-header-left2-hover";
+        //遮罩 hover 状态
         wantMask.className = "want-mask-hover";
+        //商品名称 hover 状态下显示
         onmaskCommodityName.className = "want-onmask-commodity-name-hover";
+        //上传人名称 hover 状态下显示
         onmaskCommodityUploader.className = "want-onmask-commodity-uploader-hover";
     }
 
     handleLeave() {
         const {briefHeaderLeft1,briefHeaderLeft2,wantMask,onmaskCommodityName, onmaskCommodityUploader} = this.refs;
+        //名字一样的情况同上,消除 hover 状态
         briefHeaderLeft1.className = "want-brief-header-left1";
         briefHeaderLeft2.className = "want-brief-header-left2";
         wantMask.className = "want-mask";
@@ -33,12 +42,14 @@ class CommodityBrief extends Component {
 
     arrowHandleHover() {
         const { wantBriefPrice , wantBriefArrow} = this.refs;
+        //价格栏目 hover
         wantBriefPrice.className = "want-brief-price-hover";
         wantBriefArrow.className = "want-brief-arrow-hover";
     }
 
     arrowHandleLeave() {
         const { wantBriefPrice , wantBriefArrow} = this.refs;
+        //价格栏目消除 hover
         wantBriefPrice.className = "want-brief-price";
         wantBriefArrow.className = "want-brief-arrow";
 

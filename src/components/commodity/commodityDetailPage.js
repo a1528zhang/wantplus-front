@@ -8,7 +8,7 @@ class CommodityDetailPage extends Component {
 
     componentDidMount(){
 
-        //根据id发送ajax
+        //获取地址 router 参数中的id
         let commodityDetailId =this.props.params.commodityId;
 
         const { getCommodityDetailData ,getCommodityDetailRecommendData} = this.props;

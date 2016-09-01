@@ -11,9 +11,10 @@ class DetailRecommend extends Component {
 
 
     render(){
+        //从父组件导入数据
         const { recommendData } = this.props;
 
-
+        //列表渲染推荐商品
         let recommendDataList = recommendData;
         let recommendList = recommendDataList.map(function(data){
             return (

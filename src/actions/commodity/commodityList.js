@@ -1,5 +1,6 @@
 import {GET_ALL_COMMODITY,SHOW_COMMODITY_RECOMMEND,DISPLAY_COMMODITY_DETAIL,ADD_COMMODITY_URL,RECOMMEND_COMMODITY_DETAIL} from "../../constants/constant"
 
+//获取首页的信息列表
 export function getAllCommodity(pageNumber){
     let result ;
     $.ajax({
@@ -18,6 +19,8 @@ export function getAllCommodity(pageNumber){
     }
 }
 
+
+//在遮罩上显示商品详情
 export function showCommodityDetail(commdityId,displayDetail){
         //锁住滚动条
         $("body").attr("class","lock");
@@ -41,6 +44,7 @@ export function showCommodityDetail(commdityId,displayDetail){
     };
 }
 
+//在遮罩上显示详情页面的推荐商品
 export function showCommodityRecommend(commodityDetailId){
     let result ;
     $.ajax({
@@ -50,7 +54,6 @@ export function showCommodityRecommend(commodityDetailId){
         async: false,
         success: function (data) {
             result = JSON.parse(data).data;
-            //console.log(result);
         }
     });
     return {
@@ -59,6 +62,8 @@ export function showCommodityRecommend(commodityDetailId){
     }
 }
 
+
+//
 export function showRecommodList(){
 
     let result = '';
@@ -77,11 +82,13 @@ export function showRecommodList(){
         recommodData:result
     };
 }
+
 /*
  * 改变url地址
  * @param commodityId
  * @returns {{type, displayDetail: *, detailData: *}}
- **/
+*/
+
 export function addCommodityUrl(commodityId){
     let originalUrl  = window.location.href;
     let start = originalUrl.indexOf("/#/")+3;

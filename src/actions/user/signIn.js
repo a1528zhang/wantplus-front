@@ -1,7 +1,7 @@
 import {SIGN_IN} from "../../constants/constant"
 import { setCookie } from "../../utils/stringUtils"
 import { readUserInfo } from "../public/navigateor"
-/**
+/*
  * 显示登陆框
  * @param displayDetail
  * @param detailData
